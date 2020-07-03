@@ -620,7 +620,7 @@ const Opus = () => {
             </footer>
 
             {/* VIDEO MODAL SECTION */}
-            <div className="modal fade" id="videoModal">
+            {/* <div className="modal fade" id="videoModal">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-body">
@@ -642,7 +642,7 @@ const Opus = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </Fragment>
     );
 };
