@@ -1,7 +1,27 @@
 import React from "react";
+import axios from "axios";
 
 class Quotes extends React.Component {
+    state = {
+        quotes: [],
+        quote: {},
+    };
+
+    componentDidMount() {
+        axios
+            .get("http://35.184.242.240:1337/quotes/2")
+            .then(({ data }) => {
+                // console.log(data);
+                this.setState({ quote: data });
+            })
+            .catch((err) => {
+                console.error(err);
+            });
+    }
+
     render() {
+        const quote = this.state.quote || "";
+
         return (
             <section
                 id="quote"
@@ -12,12 +32,9 @@ class Quotes extends React.Component {
                         <div className="col">
                             <div className="info-header">
                                 <p className="lead font-monte font-size-16">
-                                    "It is a privilege to serve mankind, for
-                                    this is the worship of God. God is here, in
-                                    all these human souls. He is the soul of
-                                    living being."
+                                    {quote.line2}
                                 </p>
-                                <h5 className="font-lato">Swami Vivekananda</h5>
+                                <h5 className="font-lato">{quote.name}</h5>
                             </div>
                         </div>
                     </div>
