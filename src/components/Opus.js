@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { Fragment } from "react";
+
+import Quote from "./Homepage/Quote";
 
 const Opus = () => {
     return (
-        <body id="home" data-spy="scroll" data-target="#main-nav">
-            <div id="root"></div>
+        <Fragment>
             <nav
                 className="navbar navbar-expand-md navbar-light fixed-top bg-alabaster"
                 id="main-nav"
@@ -176,26 +177,7 @@ const Opus = () => {
             </section>
 
             {/* QUOTE SECTION */}
-            <section
-                id="quote"
-                className="py-4 text-center bg-d-gray text-white"
-            >
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
-                            <div className="info-header">
-                                <p className="lead font-monte font-size-16">
-                                    "It is a privilege to serve mankind, for
-                                    this is the worship of God. God is here, in
-                                    all these human souls. He is the soul of
-                                    living being."
-                                </p>
-                                <h5 className="font-lato">Swami Vivekananda</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Quote />
 
             {/* BOXES */}
             <section id="boxes" className="pt-5 bg-alabaster">
@@ -829,11 +811,11 @@ const Opus = () => {
                         </div>
 
                         {/* <div className="col-md-6 ml-auto">
-          <p className="lead">
-            Copyright &copy;
-            <span id="year"></span>
-          </p>
-        </div> */}
+                            <p className="lead">
+                                Copyright &copy;
+                                <span id="year"></span>
+                            </p>
+                            </div> */}
                     </div>
                 </div>
             </footer>
@@ -862,7 +844,7 @@ const Opus = () => {
                     </div>
                 </div>
             </div>
-        </body>
+        </Fragment>
     );
 };
 
