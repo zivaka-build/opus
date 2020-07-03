@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { Fragment } from "react";
 
 const Opus = () => {
     return (
-        <body id="home" data-spy="scroll" data-target="#main-nav">
-            <div id="root"></div>
+        <Fragment>
             <nav
                 className="navbar navbar-expand-md navbar-light fixed-top bg-alabaster"
                 id="main-nav"
@@ -862,7 +861,7 @@ const Opus = () => {
                     </div>
                 </div>
             </div>
-        </body>
+        </Fragment>
     );
 };
 
