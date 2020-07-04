@@ -6,6 +6,7 @@ import Article from "./Homepage/Article";
 import LogosPanel from "./Homepage/LogosPanel";
 import Contact from "./Homepage/Contact";
 import Involve from "./Homepage/Involve";
+import Footer from "./Homepage/Footer";
 
 const Opus = () => {
     return (
@@ -411,96 +412,8 @@ const Opus = () => {
             <Contact />
 
             {/* FOOTER */}
-            <footer id="main-footer" className="py-5 bg-d-gray text-white">
-                <div className="container">
-                    <div className="row text-center">
-                        <div className="col-sm-12 col-xs-12 col-md-3 col-lg-3">
-                            <a href="opus.html" className="navbar-brand">
-                                <img
-                                    src={require("./../assets/img/opus.png")}
-                                    width="100"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                        <div className="col-sm-12 col-xs-12 col-md-5 col-lg-5">
-                            <ul className="nav navbar">
-                                <li className="nav-items active">
-                                    <a
-                                        href="opus.html"
-                                        className="nav-link text-light font-weight-bold font-monte"
-                                    >
-                                        Home
-                                    </a>
-                                </li>
-                                <li className="nav-items">
-                                    <a
-                                        href="media_center.html"
-                                        className="nav-link text-light font-weight-bold font-monte"
-                                    >
-                                        Media Center
-                                    </a>
-                                </li>
-                                <li className="nav-items">
-                                    <a
-                                        href="https://rzp.io/l/jvLArNx"
-                                        target="_blank"
-                                        className="nav-link text-light font-weight-bold font-monte"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Donate Now
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div
-                            className="col-sm-12 col-xs-12 col-md-3 col-lg-3"
-                            style={{ marginTop: "8px" }}
-                            // style="margin-top:8px;"
-                        >
-                            <a
-                                href="https://www.facebook.com/wecareprojectofopusfoundation"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img
-                                    src={require("./../assets/img/fbicon.png")}
-                                    alt=""
-                                />
-                            </a>
-                            <a href="#" target="_blank">
-                                <img
-                                    src={require("./../assets/img/whatsapp.png")}
-                                    alt=""
-                                />
-                            </a>
-                            <a href="#" target="_blank">
-                                <img
-                                    src={require("./../assets/img/twitter.png")}
-                                    alt=""
-                                />
-                            </a>
-                            <a
-                                href="https://www.instagram.com/opusfoundationtrust"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img
-                                    src={require("./../assets/img/instagram.png")}
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-
-                        {/* <div className="col-md-6 ml-auto">
-                            <p className="lead">
-                                Copyright &copy;
-                                <span id="year"></span>
-                            </p>
-                            </div> */}
-                    </div>
-                </div>
-            </footer>
+            <Footer />
+            
 
             {/* VIDEO MODAL SECTION */}
             {/* <div className="modal fade" id="videoModal">
