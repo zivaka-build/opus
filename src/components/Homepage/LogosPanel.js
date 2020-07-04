@@ -10,7 +10,7 @@ class LogosPanel extends React.Component {
         axios
             .get("http://35.184.242.240:1337/initiative-panel/")
             .then(({ data }) => {
-                console.log(data);
+                // console.log(data);
                 const logos = [];
                 const logo_names = ["roshnilogo", "metrlogo", "aashakiranlogo"];
                 const root = "http://35.184.242.240:1337";
