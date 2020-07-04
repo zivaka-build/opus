@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import axios from "axios";
-import { navigate, Link } from "@reach/router";
 
 class LogosPanel extends React.Component {
     state = {
@@ -14,7 +13,7 @@ class LogosPanel extends React.Component {
             .then(({ data }) => {
                 // console.log(data);
                 const logos = new Array(3);
-                const logo_names = ["aashakiranlogo", "roshnilogo", "metrlogo"];
+                const logo_names = ["roshnilogo", "metrlogo", "aashakiranlogo"];
                 const root = "http://35.184.242.240:1337";
                 logo_names.forEach((logo_name, index) => {
                     const logoObj = data[logo_name],

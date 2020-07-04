@@ -8,7 +8,7 @@ class Article extends React.Component {
             videoSRCauto = videoSRC;
 
         const iframe = document.getElementsByTagName("iframe")[0];
-        console.log(iframe);
+        // console.log(iframe);
 
         iframe.setAttribute("src", videoSRCauto);
     }
@@ -17,12 +17,11 @@ class Article extends React.Component {
         e.preventDefault();
 
         const el = e.target.parentElement;
-        console.log(el.getAttribute("data-target"));
-        const theModal = el.getAttribute("data-target"),
-            videoSRC = el.getAttribute("data-video"),
+        // console.log(el.getAttribute("data-target"));
+        const videoSRC = el.getAttribute("data-video"),
             videoSRCauto = videoSRC;
 
-        console.log(theModal, videoSRC, videoSRCauto);
+        // console.log(theModal, videoSRC, videoSRCauto);
         const iframe = document.getElementsByTagName("iframe")[0];
         console.log(iframe);
 
