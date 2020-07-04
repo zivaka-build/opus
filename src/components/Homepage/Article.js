@@ -264,7 +264,7 @@ class Article extends React.Component {
                                     }}
                                     // style="border:none;overflow:hidden"
                                     scrolling="no"
-                                    frameborder="0"
+                                    frameBorder="0"
                                     allowTransparency="true"
                                     allowFullScreen="true"
                                 ></iframe>
