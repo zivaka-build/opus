@@ -27,23 +27,6 @@ class Article extends React.Component {
         console.log(iframe);
 
         iframe.setAttribute("src", videoSRCauto);
-
-        // document
-        //     .getElementsByName("iframe")[0]
-        //     .setAttribute("src", videoSRCauto);
-
-        // document
-        //     .getElementById(theModal + " button.close")
-        //     .addEventListener("click", (event) => {
-        //         event.target.setAttribute("src", videoSRC);
-        //     });
-
-        // console.log(videoSRCauto);
-        // $(theModal + " iframe").attr("src", videoSRCauto);
-
-        // $(theModal + " button.close").click(function () {
-        //     //$(theModal + ' iframe').attr('src', videoSRC);
-        // });
     }
 
     render() {

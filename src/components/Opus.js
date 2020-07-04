@@ -9,11 +9,11 @@ import LogosPanel from "./Homepage/LogosPanel";
 import Contact from "./Homepage/Contact";
 import Involve from "./Homepage/Involve";
 import Footer from "./Homepage/Footer";
+import Gallery from "./Homepage/Gallery";
 
 const Opus = () => {
     return (
         <Fragment>
-            
             {/* NavBar */}
             <Nav />
 
@@ -65,126 +65,8 @@ const Opus = () => {
             {/* DONATE NOW & VOLUNTEER SECTION */}
             <Involve />
 
-            <section id="gallery" className="py-5 bg-alabaster">
-                <div className="container">
-                    <div className="row no-gutters">
-                        <div className="col-md-3">
-                            <div className="card card-inverse">
-                                <a
-                                    href="img/gallery/1.png"
-                                    data-toggle="lightbox"
-                                >
-                                    <img
-                                        className="card-img rounded-0"
-                                        src={require("./../assets/img/gallery/1.png")}
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="card card-inverse">
-                                <a
-                                    href="img/gallery/2.png"
-                                    data-toggle="lightbox"
-                                >
-                                    <img
-                                        className="card-img rounded-0"
-                                        src={require("./../assets/img/gallery/2.png")}
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="card card-inverse">
-                                <a
-                                    href="img/gallery/3.png"
-                                    data-toggle="lightbox"
-                                >
-                                    <img
-                                        className="card-img rounded-0"
-                                        src={require("./../assets/img/gallery/3.png")}
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="card card-inverse">
-                                <a
-                                    href="img/gallery/4.png"
-                                    data-toggle="lightbox"
-                                >
-                                    <img
-                                        className="card-img rounded-0"
-                                        src={require("./../assets/img/gallery/4.png")}
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row no-gutters">
-                        <div className="col-md-3">
-                            <div className="card card-inverse">
-                                <a
-                                    href="img/gallery/5.png"
-                                    data-toggle="lightbox"
-                                >
-                                    <img
-                                        className="card-img rounded-0"
-                                        src={require("./../assets/img/gallery/5.png")}
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="card card-inverse">
-                                <a
-                                    href="img/gallery/6.png"
-                                    data-toggle="lightbox"
-                                >
-                                    <img
-                                        className="card-img rounded-0"
-                                        src={require("./../assets/img/gallery/6.png")}
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="card card-inverse">
-                                <a
-                                    href="img/gallery/7.png"
-                                    data-toggle="lightbox"
-                                >
-                                    <img
-                                        className="card-img rounded-0"
-                                        src={require("./../assets/img/gallery/7.png")}
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="card card-inverse">
-                                <a
-                                    href="img/gallery/8.png"
-                                    data-toggle="lightbox"
-                                >
-                                    <img
-                                        className="card-img rounded-0"
-                                        src={require("./../assets/img/gallery/8.png")}
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/* GALLERY */}
+            <Gallery />
 
             {/* TESTIMONIALS SECTION */}
             <section
@@ -239,32 +121,6 @@ const Opus = () => {
 
             {/* FOOTER */}
             <Footer />
-            
-
-            {/* VIDEO MODAL SECTION */}
-            {/* <div className="modal fade" id="videoModal">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-body">
-                            <button className="close" data-dismiss="modal">
-                                <span>&times;</span>
-                            </button>
-                            <iframe
-                                title="iframe#1"
-                                // src=""
-                                width="100%"
-                                height="308"
-                                style={{ border: "none", overflow: "hidden" }}
-                                // style="border:none;overflow:hidden"
-                                scrolling="no"
-                                frameborder="0"
-                                allowTransparency="true"
-                                allowFullScreen="true"
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </Fragment>
     );
 };
