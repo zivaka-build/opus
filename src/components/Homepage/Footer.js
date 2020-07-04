@@ -41,7 +41,7 @@ class Footer extends React.Component {
               <a href="opus.html" className="navbar-brand">
                 <img
                   src={this.state.imgUrl + this.state.imgSrc}
-                  width="100"
+                  width="200"
                   alt=""
                 />
               </a>
@@ -88,10 +88,18 @@ class Footer extends React.Component {
               >
                 <img src={require("./../../assets/img/fbicon.png")} alt="" />
               </a>
-              <a href={this.state.whatsapp} target="_blank" rel="noopener noreferrer">
+              <a
+                href={this.state.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={require("./../../assets/img/whatsapp.png")} alt="" />
               </a>
-              <a href={this.state.twitter_link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={this.state.twitter_link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={require("./../../assets/img/twitter.png")} alt="" />
               </a>
               <a
