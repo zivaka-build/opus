@@ -4,7 +4,6 @@ import React, { Fragment } from "react";
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
 import Article from "./Homepage/Article";
-import Story from "./Homepage/Story";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";

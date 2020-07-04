@@ -10,6 +10,7 @@ import Contact from "./Homepage/Contact";
 import Involve from "./Homepage/Involve";
 import Footer from "./Homepage/Footer";
 import Gallery from "./Homepage/Gallery";
+import Testimonials from "./Homepage/Testimonials";
 
 const Opus = () => {
     return (
@@ -69,52 +70,7 @@ const Opus = () => {
             <Gallery />
 
             {/* TESTIMONIALS SECTION */}
-            <section
-                id="testimonials"
-                className="py-5 text-center bg-white text-black"
-            >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 test-left">
-                            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 panel-left">
-                                <img
-                                    src={require("./../assets/img/Group 8.png")}
-                                    alt=""
-                                    className="img-fluid rounded-circle mb-2"
-                                />
-                                <h4>Sayanti Mukherjee</h4>
-                                <small>Freelance Writer, Kolkata</small>
-                            </div>
-                            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 pt-5 panel-right">
-                                <p>
-                                    “Really appreciate what We Care has tried to
-                                    do and has done.. At such a time as this
-                                    (the Covid 19 crisis) it's people like you
-                                    that make a difference.. Kudos to your team”
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 test-right">
-                            <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 pt-5 panel-left">
-                                <p>
-                                    “Small efforts can make small differences
-                                    here in the time of Universal crisis. Be
-                                    kind to each other dor a better tomorrow”
-                                </p>
-                            </div>
-                            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 panel-right">
-                                <img
-                                    src={require("./../assets/img/Group 7.png")}
-                                    alt=""
-                                    className="img-fluid rounded-circle mb-2"
-                                />
-                                <h4>Pavel Banerjee</h4>
-                                <small> Businessman, Kolkata</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Testimonials />
 
             {/* CONTACT US SECTION */}
             <Contact />
