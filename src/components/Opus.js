@@ -3,6 +3,9 @@ import React, { Fragment } from "react";
 
 import Quote from "./Homepage/Quote";
 import Article from "./Homepage/Article";
+import LogosPanel from "./Homepage/LogosPanel";
+import Contact from "./Homepage/Contact";
+import Involve from "./Homepage/Involve";
 
 const Opus = () => {
     return (
@@ -181,51 +184,7 @@ const Opus = () => {
             <Quote />
 
             {/* BOXES */}
-            <section id="boxes" className="pt-5 bg-alabaster">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <a href="roshni.html" target="_blank">
-                                <div className="card text-center text-white mb-resp">
-                                    <div className="card-body">
-                                        <img
-                                            src={require("./../assets/img/roshni.png")}
-                                            alt="Roshni"
-                                            width="100%"
-                                        />
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-md-4">
-                            <a href="metR.html" target="_blank">
-                                <div className="card text-center mb-resp">
-                                    <div className="card-body">
-                                        <img
-                                            src={require("./../assets/img/metr.png")}
-                                            alt="MetR"
-                                            width="100%"
-                                        />
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-md-4">
-                            <a href="ashakiran.html" target="_blank">
-                                <div className="card text-center text-white">
-                                    <div className="card-body">
-                                        <img
-                                            src={require("./../assets/img/asha_kiran.png")}
-                                            alt="Asha Kiran"
-                                            width="100%"
-                                        />
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <LogosPanel />
 
             {/* ARTICLES */}
             <Article />
@@ -277,63 +236,7 @@ const Opus = () => {
             </section>
 
             {/* DONATE NOW & VOLUNTEER SECTION */}
-            <section id="faq" className="pt-5 bg-alabaster txt-r-black">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5 faq-left">
-                            <div className="card">
-                                <div className="card-body">
-                                    <a
-                                        href="https://rzp.io/l/jvLArNx"
-                                        target="_blank"
-                                        className="btn btn-primary bg-g-crayola mb-3"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Donate Now
-                                    </a>
-                                    <p>
-                                        We Care is a project of the Opus
-                                        Foundation, a registered Trust with 80G
-                                        Registration
-                                    </p>
-                                    <p>
-                                        For 80G Certificate and official
-                                        receipt, please drop us a mail at
-                                        theopusfoundation@gmail.com with your
-                                        Name, Pan Card no. and email id
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5">
-                            <div className="card">
-                                <div className="card-body">
-                                    <a
-                                        href="#"
-                                        className="btn btn-primary bg-g-crayola mb-3"
-                                    >
-                                        Volunteer
-                                    </a>
-                                    <p>
-                                        A nonprofit is as strong as the
-                                        community that holds it up. Together, we
-                                        can do more than we can do alone. Let's
-                                        bring our abilities and passions
-                                        together to affect real change. There
-                                        are many ways to support our mission.
-                                        Contact us to find out more about
-                                        opportunities. We welcome ideas and
-                                        initiatives and will also give
-                                        certificates if you should need the
-                                        same. For more details, contact our
-                                        WhatsApp helpline +91 9830933434
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Involve />
 
             <section id="gallery" className="py-5 bg-alabaster">
                 <div className="container">
@@ -505,27 +408,7 @@ const Opus = () => {
             </section>
 
             {/* CONTACT US SECTION */}
-            <section id="home-icons" className="py-5 bg-alabaster">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4 mb-4 text-center">
-                            <i className="fas fa-envelope fa-3x mb-2"></i>
-                            <h3>Email</h3>
-                            <p>theopusfoundation@gmail.com</p>
-                        </div>
-                        <div className="col-md-4 mb-4 text-center">
-                            <i className="fas fa-address-book fa-3x mb-2"></i>
-                            <h3>Address</h3>
-                            <p>4a, Elgin Road Kolkata 700020</p>
-                        </div>
-                        <div className="col-md-4 mb-4 text-center">
-                            <i className="fas fa-phone fa-3x mb-2"></i>
-                            <h3>Phone</h3>
-                            <p>+91 9830933434</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Contact />
 
             {/* FOOTER */}
             <footer id="main-footer" className="py-5 bg-d-gray text-white">

@@ -4,8 +4,7 @@ import React, { Fragment } from "react";
 class Article extends React.Component {
     componentDidMount() {
         const el = document.getElementsByClassName("video")[0];
-        const theModal = el.getAttribute("data-target"),
-            videoSRC = el.getAttribute("data-video"),
+        const videoSRC = el.getAttribute("data-video"),
             videoSRCauto = videoSRC;
 
         const iframe = document.getElementsByTagName("iframe")[0];
