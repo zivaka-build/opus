@@ -1,11 +1,11 @@
 import React from "react";
 
-class Milestone extends React.Component {
+class CurrentProjects extends React.Component {
   render() {
     return (
       <section id="story" className="bg-alabaster">
-        <div className="container pb-4">
-        <h1 class="text-primary text-center pt-5">Milestones</h1>
+        <div className="container pb-2">
+        <h1 class="text-primary text-center">Current Projects</h1>
           <div className="row pt-5">
             <div className="col-lg-6  col-md-6 col-12">
               <img
@@ -26,7 +26,7 @@ class Milestone extends React.Component {
               <button className="btn bg-primary text-white">
                 Know more
               </button>{" "}
-              {/* <button className="btn bg-primary text-white ">Donate</button> */}
+              <button className="btn bg-primary text-white ">Donate</button>
             </div>
           </div>
           <div className="row pt-5">
@@ -42,7 +42,7 @@ class Milestone extends React.Component {
               <button className="btn bg-primary text-white">
                 Know more
               </button>{" "}
-              {/* <button className="btn bg-primary text-white ">Donate</button> */}
+              <button className="btn bg-primary text-white ">Donate</button>
             </div>
             <div className="col-lg-6  col-md-6 col-12">
               <img
@@ -72,7 +72,7 @@ class Milestone extends React.Component {
               <button className="btn bg-primary text-white">
                 Know more
               </button>{" "}
-              {/* <button className="btn bg-primary text-white ">Donate</button> */}
+              <button className="btn bg-primary text-white ">Donate</button>
             </div>
           </div>
         </div>
@@ -81,4 +81,4 @@ class Milestone extends React.Component {
   }
 }
 
-export default Milestone;
+export default CurrentProjects;
