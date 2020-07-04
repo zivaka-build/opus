@@ -10,12 +10,15 @@ import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import Gallery from "./Homepage/Gallery";
 import Team from "./Homepage/Team";
+import Milestone from "./Homepage/Milestone";
 
 const Roshni = () => {
   return (
     <Fragment>
       {/* NavBar */}
       <Nav />
+
+      < Milestone />
 
       {/* ABOUT SECTION */}
       <OurStory />
