@@ -34,7 +34,7 @@ class LogosPanel extends React.Component {
 
     render() {
         return (
-            <section id="boxes" className="pt-5 bg-alabaster">
+            <section id="boxes" className="pt-5 pb-5 bg-alabaster">
                 <div className="container">
                     <div className="row">
                         {this.state.logos.map((logoObj) => (

@@ -27,7 +27,7 @@ class CurrentProjects extends React.Component {
     render() {
         return (
             <section id="story" className="bg-alabaster">
-                <div className="container pb-2">
+                <div className="container pb-2 pt-5">
                     <h1 class="text-primary text-center">Current Projects</h1>
                     {this.state.articles.map((article, index) => {
                         if (index % 2 === 0) {
