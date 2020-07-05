@@ -10,7 +10,7 @@ import Contact from "./Homepage/Contact";
 import Involve from "./Homepage/Involve";
 import Footer from "./Homepage/Footer";
 import Gallery from "./Homepage/Gallery";
-import Testimonials from "./Homepage/Testimonials";
+import Testimonial from "./Homepage/Testimonial";
 import Showcase from "./Homepage/Showcase";
 
 const Opus = () => {
@@ -41,7 +41,7 @@ const Opus = () => {
             <Gallery />
 
             {/* TESTIMONIALS SECTION */}
-            <Testimonials />
+            <Testimonial />
 
             {/* CONTACT US SECTION */}
             <Contact />
