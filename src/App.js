@@ -8,6 +8,7 @@ import Opus from "./components/Opus";
 import Roshni from "./components/Roshni";
 import Metr from "./components/Metr";
 import Aashakiran from "./components/Aashakiran";
+import AboutUs from "./components/AboutUs";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Roshni path="/roshni" />
             <Metr path="/metr" />
             <Aashakiran path="/aashakiran" />
+            <AboutUs path="/about" />
         </Router>
     );
 }

@@ -37,7 +37,7 @@ class Nav extends React.Component {
                                 <Link
                                     to="/"
                                     className="nav-link"
-                                    href="opus.html"
+                                    href=""
                                 >
                                     Home{" "}
                                     <span className="sr-only">(current)</span>

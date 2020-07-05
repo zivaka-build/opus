@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from "react";
-
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
 import Article from "./Homepage/Article";
@@ -13,19 +12,13 @@ import Milestone from "./Homepage/Milestone";
 import CurrentProjects from "./Homepage/CurrentProjects";
 import Testimonial from "./Homepage/Testimonial";
 
-const Roshni = () => {
+const AboutUs = () => {
     return (
         <Fragment>
             {/* NavBar */}
             <Nav />
 
             <Testimonial />
-
-            {/* ABOUT SECTION */}
-            <OurStory aboutId="1" />
-
-            {/* MILESTONE */}
-            <Milestone />
 
             {/* QUOTE SECTION */}
             <Quote />
@@ -54,4 +47,4 @@ const Roshni = () => {
     );
 };
 
-export default Roshni;
+export default AboutUs;
