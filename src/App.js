@@ -7,7 +7,7 @@ import "./assets/css/opus-style.css";
 import Opus from "./components/Opus";
 import Roshni from "./components/Roshni";
 import Metr from "./components/Metr";
-import Ashakiran from "./components/Ashakiran";
+import Aashakiran from "./components/Aashakiran";
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
             <Opus path="/" />
             <Roshni path="/roshni" />
             <Metr path="/metr" />
-            <Ashakiran path="/ashakiran" />
+            <Aashakiran path="/aashakiran" />
         </Router>
     );
 }

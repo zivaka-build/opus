@@ -34,10 +34,14 @@ class Nav extends React.Component {
                     >
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <a className="nav-link" href="opus.html">
+                                <Link
+                                    to="/"
+                                    className="nav-link"
+                                    href="opus.html"
+                                >
                                     Home{" "}
                                     <span className="sr-only">(current)</span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a
@@ -69,7 +73,7 @@ class Nav extends React.Component {
                                         MetR
                                     </Link>
                                     <Link
-                                        to="/ashakiran"
+                                        to="/aashakiran"
                                         className="dropdown-item"
                                         href="ashakiran.html"
                                     >
