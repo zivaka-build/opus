@@ -17,24 +17,34 @@ const Roshni = () => {
         <Fragment>
             {/* NavBar */}
             <Nav />
+
             {/* ABOUT SECTION */}
             <OurStory />
+
             {/* MILESTONE */}
             <Milestone />
+
             {/* QUOTE SECTION */}
             <Quote />
+
             {/* ARTICLES */}
             <Article />
+
             {/* TEAM */}
             <Team />
+
             {/* CurrentProjects */}
             <CurrentProjects />
+
             {/* STORY */}
             {/* <Story /> */}
+
             {/* GALLERY */}
             <Gallery />
+
             {/* CONTACT US SECTION */}
             <Contact />
+
             {/* FOOTER */}
             <Footer />
         </Fragment>
