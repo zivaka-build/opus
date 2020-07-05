@@ -8,19 +8,20 @@ class CurrentProjects extends React.Component {
 
     componentDidMount() {
         const root = "http://35.184.242.240:1337";
-        axios.get("http://35.184.242.240:1337/milestones").then((res) => {
-            const data = res.data[0];
-            const articles = data.storypanelwides.map((article) => {
-                return {
-                    headline: article.headline,
-                    description: article.description,
-                    knowmore: article.knowmore,
-                    donatelink: article.donatelink,
-                    imgSrc: root + article.dpimg.formats.medium.url,
-                };
+        axios
+            .get("http://35.184.242.240:1337/milestones/2")
+            .then(({ data }) => {
+                const articles = data.storypanelwides.map((article) => {
+                    return {
+                        headline: article.headline,
+                        description: article.description,
+                        knowmore: article.knowmore,
+                        donatelink: article.donatelink,
+                        imgSrc: root + article.dpimg.formats.medium.url,
+                    };
+                });
+                this.setState({ articles });
             });
-            this.setState({ articles });
-        });
     }
 
     render() {

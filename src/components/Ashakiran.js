@@ -4,44 +4,43 @@ import React, { Fragment } from "react";
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
 import Article from "./Homepage/Article";
-import Story from "./Homepage/Story";
-import LogosPanel from "./Homepage/LogosPanel";
 import Contact from "./Homepage/Contact";
-import Involve from "./Homepage/Involve";
 import Footer from "./Homepage/Footer";
+import OurStory from "./Homepage/OurStory";
 import Gallery from "./Homepage/Gallery";
-import Testimonials from "./Homepage/Testimonials";
-import Showcase from "./Homepage/Showcase";
+import Team from "./Homepage/Team";
+import Milestone from "./Homepage/Milestone";
+import CurrentProjects from "./Homepage/CurrentProjects";
 
-const Opus = () => {
+const Ashakiran = () => {
     return (
         <Fragment>
             {/* NavBar */}
             <Nav />
 
-            {/* SHOWCASE */}
-            <Showcase />
+            {/* ABOUT SECTION */}
+            <OurStory aboutId="3" />
+
+            {/* MILESTONE */}
+            <Milestone />
 
             {/* QUOTE SECTION */}
             <Quote />
 
-            {/* BOXES */}
-            <LogosPanel />
-
             {/* ARTICLES */}
             <Article />
 
-            {/* STORY */}
-            <Story />
+            {/* TEAM */}
+            <Team />
 
-            {/* DONATE NOW & VOLUNTEER SECTION */}
-            <Involve />
+            {/* CurrentProjects */}
+            <CurrentProjects />
+
+            {/* STORY */}
+            {/* <Story /> */}
 
             {/* GALLERY */}
             <Gallery />
-
-            {/* TESTIMONIALS SECTION */}
-            <Testimonials />
 
             {/* CONTACT US SECTION */}
             <Contact />
@@ -52,4 +51,4 @@ const Opus = () => {
     );
 };
 
-export default Opus;
+export default Ashakiran;

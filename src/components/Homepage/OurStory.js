@@ -12,7 +12,9 @@ class OurStory extends React.Component {
 
     componentDidMount() {
         axios
-            .get("http://35.184.242.240:1337/aboutsections/1")
+            .get(
+                "http://35.184.242.240:1337/aboutsections/" + this.props.aboutId
+            )
             .then(({ data }) => {
                 const { title, textblock1, textblock2, name } = data;
                 const imgSrc =

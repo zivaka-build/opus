@@ -19,7 +19,7 @@ const Roshni = () => {
             <Nav />
 
             {/* ABOUT SECTION */}
-            <OurStory />
+            <OurStory aboutId="1" />
 
             {/* MILESTONE */}
             <Milestone />

@@ -11,16 +11,16 @@ import Involve from "./Homepage/Involve";
 import Footer from "./Homepage/Footer";
 import Gallery from "./Homepage/Gallery";
 import Testimonials from "./Homepage/Testimonials";
-import Showcase from "./Homepage/Showcase";
+import OurStory from "./Homepage/OurStory";
 
-const Opus = () => {
+const Metr = () => {
     return (
         <Fragment>
             {/* NavBar */}
             <Nav />
 
-            {/* SHOWCASE */}
-            <Showcase />
+            {/* ABOUT SECTION */}
+            <OurStory aboutId="2" />
 
             {/* QUOTE SECTION */}
             <Quote />
@@ -52,4 +52,4 @@ const Opus = () => {
     );
 };
 
-export default Opus;
+export default Metr;
