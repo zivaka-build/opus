@@ -11,11 +11,8 @@ class Nav extends React.Component {
       >
         <div className="container">
           <a href="opus.html" className="navbar-brand">
-            <img
-              src={require("./../../assets/img/opus.png")}
-              width="100"
-              alt=""
-            />
+          
+            <img src={require("./../../assets/img/opus.png")} width={100} alt />
           </a>
           <button
             className="navbar-toggler"
@@ -26,77 +23,34 @@ class Nav extends React.Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <Link to="/" className="nav-link" href="">
+                <a className="nav-link" href="opus.html">
                   Home <span className="sr-only">(current)</span>
-                </Link>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href=""
-                  id="navbarDropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Verticals
                 </a>
-                <div
-                  className="dropdown-menu bg-alabaster"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <Link
-                    to="/roshni"
-                    className="dropdown-item"
-                    href="roshni.html"
-                  >
-                    Roshni
-                  </Link>
-                  <Link to="/metr" className="dropdown-item" href="metR.html">
-                    MetR
-                  </Link>
-                  <Link
-                    to="/aashakiran"
-                    className="dropdown-item"
-                    href="ashakiran.html"
-                  >
-                    AshaKiran
-                  </Link>
-                </div>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href=""
-                  id="navbarDropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
+              <li className="nav-item">
+                <a className="nav-link" href="media_center.html">
+                  Roshni
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="media_center.html">
+                  MetR
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="media_center.html">
+                  AshaKiran
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="media_center.html">
                   About Us
                 </a>
-                <div
-                  className="dropdown-menu bg-alabaster"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <a className="dropdown-item" href="our_story.html">
-                    Our Story
-                  </a>
-                  <a className="dropdown-item" href="our_team.html">
-                    Our Team
-                  </a>
-                  <a className="dropdown-item" href="legal_financial.html">
-                    Legal & Financial
-                  </a>
-                  <a className="dropdown-item" href="contact_us.html">
-                    Contact Us
-                  </a>
-                </div>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="media_center.html">
@@ -109,14 +63,8 @@ class Nav extends React.Component {
               target="_blank"
               className="btn py-0"
               style={{ cursor: "pointer" }}
-              // style="cursor: pointer;"
-              rel="noopener noreferrer"
             >
-              <img
-                src={require("./../../assets/img/donate_now.png")}
-                width="160"
-                alt=""
-              />
+              <img src={require("./../../assets/img/donate_now.png")} width={160} alt />
             </a>
           </div>
         </div>
