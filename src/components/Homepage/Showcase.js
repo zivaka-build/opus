@@ -17,8 +17,8 @@ class Gallery extends React.Component {
                                     adipisicing elit. Nam, tempora!
                                 </p>
                                 <a
-                                    href=""
-                                    className="btn btn-outline-secondary btn-lg text-white"
+                                    href="/about"
+                                    className="btn showcasebtn btn-outline-secondary btn-lg text-white"
                                 >
                                     <i className="fas fa-arrow-right"></i> Read
                                     More
@@ -26,9 +26,9 @@ class Gallery extends React.Component {
                             </div>
                             <div className="col-lg-6">
                                 <img
-                                    src={require("./../../assets/img/book.png")}
-                                    alt=""
-                                    className="img-fluid d-none d-lg-block"
+                                    src={require("./../../assets/img/banner.png")}
+                                    alt="opus showcase banner"
+                                    className="img-fluid d-none d-lg-block showcasebanner"
                                 />
                             </div>
                         </div>
