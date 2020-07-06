@@ -1,6 +1,52 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import axios from "axios";
+import RecentPosts from "./RecentPosts";
 
 class SingleBlog extends React.Component {
+    state = {
+        Title: "",
+        BlogIntro: "",
+        postDate: "",
+        tag: "",
+        author: {},
+        blogbody: "",
+        preview: "",
+        fullBlog: false,
+        imgSrc: "",
+        showButton: true,
+    };
+
+    componentDidMount() {
+        axios
+            .get("http://35.184.242.240:1337/blogs/1")
+            .then(({ data }) => {
+                const root = "http://35.184.242.240:1337";
+                const {
+                    Title,
+                    BlogIntro,
+                    postdate: postDate,
+                    tag,
+                    author,
+                    blogbody,
+                } = data;
+
+                const preview = blogbody.substring(0, 200);
+                const imgSrc = data.dpimg ? root + data.dpimg : "";
+                this.setState({
+                    Title,
+                    BlogIntro,
+                    postDate,
+                    tag,
+                    author,
+                    blogbody,
+                    preview,
+                    imgSrc,
+                });
+            })
+            .catch(console.error);
+    }
+
     render() {
         return (
             <section className="blog-container">
@@ -10,87 +56,53 @@ class SingleBlog extends React.Component {
                             <article>
                                 <header>
                                     <h2 className="blog-post-title">
-                                        ENTITLEMENT AND PRIVILEGE
+                                        {this.state.Title}
                                     </h2>
                                     <p className="blog-post-meta">
-                                        <i className="far fa-clock" /> June 2,
-                                        2020 &nbsp;
-                                        <i className="fas fa-user" /> Richard
-                                        Rozario &nbsp;
+                                        <i className="far fa-clock" />{" "}
+                                        {this.state.postDate} &nbsp;
+                                        <i className="fas fa-user" />{" "}
+                                        {this.state.author.username} &nbsp;
                                         <i className="far fa-folder-open" />{" "}
                                         Issues Ins and Out &nbsp;
-                                        <i className="fas fa-tags" /> achievers,
-                                        entitlement, hardwork, privilege,
-                                        reservation
+                                        <i className="fas fa-tags" />{" "}
+                                        {this.state.tag}
                                     </p>
                                 </header>
-                                <figure>
-                                    <img
-                                        src="https://dsim.in/blog/wp-content/uploads/2019/09/skill-shop.png"
-                                        alt=""
-                                    />
-                                    <figcaption>
-                                        Caption for the image
-                                    </figcaption>
-                                </figure>
+                                {this.state.imgSrc ? (
+                                    <figure>
+                                        <img
+                                            src={this.state.imgSrc}
+                                            alt="single blog page"
+                                        />
+                                        {/* <figcaption>
+                                            Caption for the image
+                                        </figcaption> */}
+                                    </figure>
+                                ) : null}
+
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quam veniam soluta commodi
-                                    quisquam omnis, illum dolore adipisci rerum
-                                    iure nisi vero cum magni, ut nam, tenetur
-                                    optio vitae. Maiores, illo. Lorem ipsum
-                                    dolor sit amet consectetur adipisicing elit.
-                                    Maiores quisquam hic perspiciatis nesciunt
-                                    ipsum sed, provident assumenda, nam omnis
-                                    error eos magnam modi consequatur temporibus
-                                    ab veritatis voluptatem exercitationem
-                                    minima. Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Cum, commodi?
-                                    Modi aut ipsum hic deleniti quod, accusamus
-                                    tenetur facilis, vitae aliquid voluptatibus
-                                    repellat illo nihil, corporis reiciendis
-                                    inventore velit optio.
+                                    {this.state.fullBlog
+                                        ? this.state.blogbody
+                                        : this.state.preview + " ..."}
                                 </p>
-                                <a href>Read More →</a>
+                                {this.state.showButton ? (
+                                    <a
+                                        href=""
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            this.setState({
+                                                fullBlog: true,
+                                                showButton: false,
+                                            });
+                                        }}
+                                    >
+                                        Read More →
+                                    </a>
+                                ) : null}
                             </article>
                         </div>
-                        <div className="col-lg-4 recent-posts">
-                            <div className="container">
-                                <h3 className="blog-post-title">
-                                    Recent Posts
-                                </h3>
-                                <hr />
-                                <ul>
-                                    <li>
-                                        <a href>
-                                            Entitlement and Privilege June 2,
-                                            2020
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href>
-                                            Gender Stereotyping – A mother’s
-                                            Angst May 31, 2020
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href>Death May 29, 2020</a>
-                                    </li>
-                                    <li>
-                                        <a href>
-                                            A personal Reckoning – In the
-                                            Sunderbans May 25, 2020
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href>
-                                            Entitlement and Privilege June 2,
-                                            2020
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <RecentPosts />
                     </div>
                 </div>
             </section>

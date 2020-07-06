@@ -10,6 +10,7 @@ import Metr from "./components/Metr";
 import Aashakiran from "./components/Aashakiran";
 import AboutUs from "./components/AboutUs";
 import MediaCenter from "./components/MediaCentre";
+import SingleBlogPage from "./components/SingleBlogPage";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Aashakiran path="/aashakiran" />
             <AboutUs path="/about" />
             <MediaCenter path="/mediacenter" />
+            <SingleBlogPage path="/singleblogpage" />
         </Router>
     );
 }

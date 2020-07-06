@@ -38,7 +38,7 @@ class Footer extends React.Component {
         <div className="container">
           <div className="row text-center">
             <div className="col-sm-12 col-xs-12 col-md-3 col-lg-3">
-              <a href="opus.html" className="navbar-brand">
+              <a href="/" className="navbar-brand">
                 <img
                   src={this.state.imgUrl + this.state.imgSrc}
                   width="200"
