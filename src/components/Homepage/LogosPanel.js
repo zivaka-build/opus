@@ -25,7 +25,6 @@ class LogosPanel extends React.Component {
                     };
                 });
                 this.setState({ logos });
-                console.log(this.state.logos);
             })
             .catch((err) => {
                 console.error(err);

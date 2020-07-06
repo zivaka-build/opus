@@ -17,7 +17,7 @@ class CurrentProjects extends React.Component {
                         description: article.description,
                         knowmore: article.knowmore,
                         donatelink: article.donatelink,
-                        imgSrc: root + article.dpimg.formats.medium.url,
+                        imgSrc: root + article.dpimg.formats.small.url,
                     };
                 });
                 this.setState({ articles });
@@ -49,9 +49,14 @@ class CurrentProjects extends React.Component {
                                             </a>
                                         ) : null}{" "}
                                         {article.donatelink ? (
-                                            <button className="btn bg-primary text-white ">
+                                            <a
+                                                href={article.donatelink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn bg-primary text-white "
+                                            >
                                                 Donate
-                                            </button>
+                                            </a>
                                         ) : null}
                                     </div>
                                     <div className="col-lg-6  col-md-6 col-12">
@@ -89,9 +94,14 @@ class CurrentProjects extends React.Component {
                                             </a>
                                         ) : null}{" "}
                                         {article.donatelink ? (
-                                            <button className="btn bg-primary text-white ">
+                                            <a
+                                                href={article.donatelink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn bg-primary text-white "
+                                            >
                                                 Donate
-                                            </button>
+                                            </a>
                                         ) : null}
                                     </div>
                                 </div>

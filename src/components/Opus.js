@@ -4,7 +4,6 @@ import React, { Fragment } from "react";
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
 import Article from "./Homepage/Article";
-import Story from "./Homepage/Story";
 import LogosPanel from "./Homepage/LogosPanel";
 import Contact from "./Homepage/Contact";
 import Involve from "./Homepage/Involve";
@@ -12,6 +11,7 @@ import Footer from "./Homepage/Footer";
 import Gallery from "./Homepage/Gallery";
 import Testimonial from "./Homepage/Testimonial";
 import Showcase from "./Homepage/Showcase";
+import ShowPanel from "./Homepage/ShowPanel";
 
 const Opus = () => {
     return (
@@ -32,7 +32,7 @@ const Opus = () => {
             <Article />
 
             {/* STORY */}
-            <Story />
+            <ShowPanel title="Milestones" id="4" />
 
             {/* DONATE NOW & VOLUNTEER SECTION */}
             <Involve />

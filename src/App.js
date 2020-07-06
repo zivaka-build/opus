@@ -21,7 +21,7 @@ function App() {
             <Aashakiran path="/aashakiran" />
             <AboutUs path="/about" />
             <MediaCenter path="/mediacenter" />
-            <SingleBlogPage path="/singleblogpage" />
+            <SingleBlogPage path="/blog/:id" />
         </Router>
     );
 }

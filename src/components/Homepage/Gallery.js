@@ -12,15 +12,20 @@ class Gallery extends React.Component {
             .get("http://35.184.242.240:1337/galleries")
             .then((res) => {
                 const data = res.data[0];
-                const urls = data.picture.map(
-                    (picObj) => root + picObj.formats.medium.url
-                );
+                // data.picture.forEach((obj) => {
+                //     console.log(obj.formats.medium.url);
+                // });
+                const urls = data.picture.map((picObj) => {
+                    return root + picObj.formats.thumbnail.url;
+                });
+                console.log({ url: urls });
                 this.setState({ urls });
             })
-            .catch((err) => console.error(err));
+            .catch(console.error);
     }
 
     render() {
+        console.log({ urls: this.state.urls });
         return (
             <section id="gallery" className="py-5 bg-alabaster">
                 <div className="container">
@@ -32,7 +37,7 @@ class Gallery extends React.Component {
                                         <img
                                             className="card-img rounded-0"
                                             src={url}
-                                            alt=""
+                                            alt={url}
                                         />
                                     </a>
                                 </div>

@@ -18,8 +18,9 @@ class SingleBlog extends React.Component {
     };
 
     componentDidMount() {
+        const blogId = window.location.pathname.split("/")[2];
         axios
-            .get("http://35.184.242.240:1337/blogs/1")
+            .get("http://35.184.242.240:1337/blogs/" + blogId)
             .then(({ data }) => {
                 const root = "http://35.184.242.240:1337";
                 const {
@@ -62,7 +63,10 @@ class SingleBlog extends React.Component {
                                         <i className="far fa-clock" />{" "}
                                         {this.state.postDate} &nbsp;
                                         <i className="fas fa-user" />{" "}
-                                        {this.state.author.username} &nbsp;
+                                        {this.state.author
+                                            ? this.state.author.username
+                                            : ""}{" "}
+                                        &nbsp;
                                         <i className="far fa-folder-open" />{" "}
                                         Issues Ins and Out &nbsp;
                                         <i className="fas fa-tags" />{" "}
