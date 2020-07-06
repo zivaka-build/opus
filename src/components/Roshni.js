@@ -7,7 +7,6 @@ import Article from "./Homepage/Article";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
-import Gallery from "./Homepage/Gallery";
 import Team from "./Homepage/Team";
 import ShowPanel from "./Homepage/ShowPanel";
 import CurrentProjects from "./Homepage/CurrentProjects";
@@ -38,9 +37,6 @@ const Roshni = () => {
 
             {/* STORY */}
             {/* <Story /> */}
-
-            {/* GALLERY */}
-            <Gallery />
 
             {/* CONTACT US SECTION */}
             <Contact />

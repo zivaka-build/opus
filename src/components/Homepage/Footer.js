@@ -74,6 +74,30 @@ class Footer extends React.Component {
                     Donate Now
                   </a>
                 </li>
+                <li className="nav-items">
+                  <a
+                    href="/roshni"
+                    className="nav-link text-light font-weight-bold font-monte"
+                  >
+                    Roshni
+                  </a>
+                </li>
+                <li className="nav-items">
+                  <a
+                    href="/metr"
+                    className="nav-link text-light font-weight-bold font-monte"
+                  >
+                    metR
+                  </a>
+                </li>
+                <li className="nav-items">
+                  <a
+                    href="/aashakiran"
+                    className="nav-link text-light font-weight-bold font-monte"
+                  >
+                    AashaKiran
+                  </a>
+                </li>
               </ul>
             </div>
             <div

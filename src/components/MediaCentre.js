@@ -3,11 +3,11 @@ import React, { Fragment } from "react";
 
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
-import Article from "./Homepage/Article";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import BlogList from "./Homepage/BlogList";
 import Showcase from "./Homepage/Showcase";
+import Milestone from "./Homepage/Milestone";
 
 const MediaCentre = () => {
     return (
@@ -21,11 +21,12 @@ const MediaCentre = () => {
             {/* QUOTE SECTION */}
             <Quote />
 
-            {/* ARTICLES */}
-            <Article />
+            {/* Milestone */}
+            <Milestone />
 
             {/* BLOGlIST SECTION */}
             <BlogList />
+
 
             {/* TEAM */}
             {/* <Team /> */}
