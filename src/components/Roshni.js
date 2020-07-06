@@ -11,45 +11,44 @@ import Gallery from "./Homepage/Gallery";
 import Team from "./Homepage/Team";
 import Milestone from "./Homepage/Milestone";
 import CurrentProjects from "./Homepage/CurrentProjects";
-import Testimonial from "./Homepage/Testimonial";
 
 const Roshni = () => {
-  return (
-    <Fragment>
-      {/* NavBar */}
-      <Nav />
+    return (
+        <Fragment>
+            {/* NavBar */}
+            <Nav />
 
-      {/* ABOUT SECTION */}
-      <OurStory aboutId="1" />
+            {/* ABOUT SECTION */}
+            <OurStory aboutId="1" />
 
-      {/* MILESTONE */}
-      <Milestone />
+            {/* MILESTONE */}
+            <Milestone />
 
-      {/* QUOTE SECTION */}
-      <Quote />
+            {/* QUOTE SECTION */}
+            <Quote />
 
-      {/* ARTICLES */}
-      <Article />
+            {/* ARTICLES */}
+            <Article />
 
-      {/* TEAM */}
-      <Team />
+            {/* TEAM */}
+            <Team />
 
-      {/* CurrentProjects */}
-      <CurrentProjects />
+            {/* CurrentProjects */}
+            <CurrentProjects />
 
-      {/* STORY */}
-      {/* <Story /> */}
+            {/* STORY */}
+            {/* <Story /> */}
 
-      {/* GALLERY */}
-      <Gallery />
+            {/* GALLERY */}
+            <Gallery />
 
-      {/* CONTACT US SECTION */}
-      <Contact />
+            {/* CONTACT US SECTION */}
+            <Contact />
 
-      {/* FOOTER */}
-      <Footer />
-    </Fragment>
-  );
+            {/* FOOTER */}
+            <Footer />
+        </Fragment>
+    );
 };
 
 export default Roshni;

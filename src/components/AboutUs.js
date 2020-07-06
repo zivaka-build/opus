@@ -16,7 +16,7 @@ const AboutUs = () => {
             <Nav />
 
             {/* ABOUT SECTION */}
-            <OurStory aboutId="1" />
+            <OurStory aboutId="4" />
 
             {/* BOXES */}
             <LogosPanel />
