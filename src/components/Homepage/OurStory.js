@@ -37,6 +37,7 @@ class OurStory extends React.Component {
                                 alt=""
                                 class="img-fluid rounded-circle mb-2"
                             />
+                            <h5>{this.state.name}</h5>
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 panel-right">
                             <h1 class="text-center">{this.state.title}</h1>
