@@ -50,15 +50,15 @@ class Footer extends React.Component {
               <ul className="nav navbar">
                 <li className="nav-items active">
                   <a
-                    href="opus.html"
+                    href="/about"
                     className="nav-link text-light font-weight-bold font-monte"
                   >
-                    Home
+                    About Us
                   </a>
                 </li>
                 <li className="nav-items">
                   <a
-                    href="media_center.html"
+                    href="/mediacenter"
                     className="nav-link text-light font-weight-bold font-monte"
                   >
                     Media Center
@@ -86,28 +86,28 @@ class Footer extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={require("./../../assets/img/fbicon.png")} alt="" />
+                <img src={require("./../../assets/img/fbicon.png")} alt="facebook icon" />
               </a>
               <a
                 href={this.state.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={require("./../../assets/img/whatsapp.png")} alt="" />
+                <img src={require("./../../assets/img/whatsapp.png")} alt="whatsapp icon" />
               </a>
               <a
                 href={this.state.twitter_link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={require("./../../assets/img/twitter.png")} alt="" />
+                <img src={require("./../../assets/img/twitter.png")} alt="twitter icon" />
               </a>
               <a
                 href={this.state.instagram_link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={require("./../../assets/img/instagram.png")} alt="" />
+                <img src={require("./../../assets/img/instagram.png")} alt="instragram icon" />
               </a>
             </div>
 

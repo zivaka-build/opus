@@ -9,6 +9,7 @@ import Roshni from "./components/Roshni";
 import Metr from "./components/Metr";
 import Aashakiran from "./components/Aashakiran";
 import AboutUs from "./components/AboutUs";
+import MediaCenter from "./components/MediaCentre";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <Metr path="/metr" />
             <Aashakiran path="/aashakiran" />
             <AboutUs path="/about" />
+            <MediaCenter path="/mediacenter" />
         </Router>
     );
 }

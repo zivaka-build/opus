@@ -6,9 +6,7 @@ import Article from "./Homepage/Article";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
-import Gallery from "./Homepage/Gallery";
 import Involve from "./Homepage/Involve";
-import CurrentProjects from "./Homepage/CurrentProjects";
 import Testimonial from "./Homepage/Testimonial";
 
 const AboutUs = () => {

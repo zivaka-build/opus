@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Link } from "@reach/router";
+
 
 class Nav extends React.Component {
   render() {
@@ -10,9 +10,9 @@ class Nav extends React.Component {
         id="main-nav"
       >
         <div className="container">
-          <a href="opus.html" className="navbar-brand">
+          <a href="/" className="navbar-brand">
           
-            <img src={require("./../../assets/img/opus.png")} width={100} alt />
+            <img src={require("./../../assets/img/opus.png")} width={100} alt="opus home icon" />
           </a>
           <button
             className="navbar-toggler"
@@ -28,32 +28,32 @@ class Nav extends React.Component {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="opus.html">
+                <a className="nav-link" href="/">
                   Home <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="media_center.html">
+                <a className="nav-link" href="/roshni">
                   Roshni
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="media_center.html">
+                <a className="nav-link" href="/metr">
                   MetR
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="media_center.html">
+                <a className="nav-link" href="/aashakiran">
                   AshaKiran
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="media_center.html">
+                <a className="nav-link" href="/about">
                   About Us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="media_center.html">
+                <a className="nav-link" href="/mediacenter">
                   Media Center
                 </a>
               </li>
@@ -61,10 +61,11 @@ class Nav extends React.Component {
             <a
               href="https://rzp.io/l/jvLArNx"
               target="_blank"
+              rel="noopener noreferrer"
               className="btn py-0"
               style={{ cursor: "pointer" }}
             >
-              <img src={require("./../../assets/img/donate_now.png")} width={160} alt />
+              <img src={require("./../../assets/img/donate_now.png")} width={160} alt="razor pay donate button" />
             </a>
           </div>
         </div>

@@ -6,10 +6,7 @@ import Nav from "./Homepage/Nav";
 import Article from "./Homepage/Article";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
-import Gallery from "./Homepage/Gallery";
-import Team from "./Homepage/Team";
-import Milestone from "./Homepage/Milestone";
-import CurrentProjects from "./Homepage/CurrentProjects";
+import BlogList from "./Homepage/BlogList";
 import Showcase from "./Homepage/Showcase";
 
 const MediaCentre = () => {
@@ -27,17 +24,17 @@ const MediaCentre = () => {
             {/* ARTICLES */}
             <Article />
 
-            {/* MILESTONE */}
-            <Milestone />
+            {/* BLOGlIST SECTION */}
+            <BlogList />
 
             {/* TEAM */}
-            <Team />
+            {/* <Team /> */}
 
             {/* CurrentProjects */}
-            <CurrentProjects />
+            {/* <CurrentProjects /> */}
 
             {/* GALLERY */}
-            <Gallery />
+            {/* <Gallery /> */}
 
             {/* CONTACT US SECTION */}
             <Contact />
