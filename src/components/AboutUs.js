@@ -33,10 +33,10 @@ const AboutUs = () => {
             <Article />
 
             {/* CurrentProjects */}
-            <CurrentProjects />
+            {/* <CurrentProjects /> */}
 
             {/* GALLERY */}
-            <Gallery />
+            {/* <Gallery /> */}
 
             {/* CONTACT US SECTION */}
             <Contact />
