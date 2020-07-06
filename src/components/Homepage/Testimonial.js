@@ -9,29 +9,19 @@ class Testimonial extends React.Component {
 
     componentDidMount() {
         axios
-            .get("http://35.184.242.240:1337/testimonials")
-            .then((res) => {
-                const testimonials = [];
+            .get("http://35.184.242.240:1337/messages")
+            .then(({ data }) => {
                 const root = "http://35.184.242.240:1337";
-                res.data.forEach((twinObj) => {
-                    const { name1, desc1, message1 } = twinObj;
-                    const dp1 = root + twinObj.dp1.formats.thumbnail.url;
-                    testimonials.push({
-                        name: name1,
-                        desc: desc1,
-                        mesasge: message1,
-                        dp: dp1,
-                    });
-                    const { name2, desc2, message2 } = twinObj;
-                    const dp2 = root + twinObj.dp2.formats.thumbnail.url;
-                    testimonials.push({
-                        name: name2,
-                        desc: desc2,
-                        mesasge: message2,
-                        dp: dp2,
-                    });
+                const testimonials = data.map((testObj) => {
+                    const { name, desc, message } = testObj;
+                    const imgSrc = root + testObj.dpimg.formats.thumbnail.url;
+                    return {
+                        name,
+                        desc,
+                        message,
+                        imgSrc,
+                    };
                 });
-                console.log(testimonials);
 
                 this.setState({ testimonials });
             })
@@ -63,7 +53,7 @@ class Testimonial extends React.Component {
                                     <div className="avatar mb-4">
                                         <p className="text-center">
                                             <img
-                                                src={testimonial.dp}
+                                                src={testimonial.imgSrc}
                                                 className="rounded-circle img-fluid avatar-image"
                                                 alt={testimonial.name}
                                             />
