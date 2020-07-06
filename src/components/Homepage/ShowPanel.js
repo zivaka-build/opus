@@ -39,9 +39,14 @@ class CurrentProjects extends React.Component {
                                         </h1>
                                         <p>{article.description}</p>
                                         {article.knowmore ? (
-                                            <button className="btn bg-primary text-white">
+                                            <a
+                                                href={article.knowmore}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn bg-primary text-white"
+                                            >
                                                 Know more
-                                            </button>
+                                            </a>
                                         ) : null}{" "}
                                         {article.donatelink ? (
                                             <button className="btn bg-primary text-white ">
@@ -74,9 +79,14 @@ class CurrentProjects extends React.Component {
                                         </h1>
                                         <p>{article.description}</p>
                                         {article.knowmore ? (
-                                            <button className="btn bg-primary text-white">
+                                            <a
+                                                href={article.knowmore}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn bg-primary text-white"
+                                            >
                                                 Know more
-                                            </button>
+                                            </a>
                                         ) : null}{" "}
                                         {article.donatelink ? (
                                             <button className="btn bg-primary text-white ">

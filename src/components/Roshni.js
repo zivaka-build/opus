@@ -9,7 +9,7 @@ import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import Gallery from "./Homepage/Gallery";
 import Team from "./Homepage/Team";
-import Milestone from "./Homepage/Milestone";
+import ShowPanel from "./Homepage/ShowPanel";
 import CurrentProjects from "./Homepage/CurrentProjects";
 
 const Roshni = () => {
@@ -22,7 +22,7 @@ const Roshni = () => {
             <OurStory aboutId="1" />
 
             {/* MILESTONE */}
-            <Milestone />
+            <ShowPanel id="1" title="Milestones" />
 
             {/* QUOTE SECTION */}
             <Quote />
