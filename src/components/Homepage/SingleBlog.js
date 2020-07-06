@@ -22,7 +22,7 @@ class SingleBlog extends React.Component {
                 <figure>
                   <img
                     src="https://dsim.in/blog/wp-content/uploads/2019/09/skill-shop.png"
-                    alt
+                    alt="single blog page"
                   />
                   <figcaption>Caption for the image</figcaption>
                 </figure>
