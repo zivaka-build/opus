@@ -6,7 +6,7 @@ body {
     font-size: 1.4rem;
     padding-right: 1.4rem;
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 0 8px;
 }
 
@@ -16,8 +16,18 @@ body {
     min-height: 600px;
 }
 
+.showcasebanner {
+    padding-top: 3.5rem;
+    width: 75%;
+    margin-left: 8rem;
+}
+
+.showcasebtn {
+    background: #525152;
+}
+
 #showcase .primary-overlay {
-    background: rgba(50, 146, 166, 0.8);
+    background: rgb(174, 173, 174, 0.3);
     position: absolute;
     top: 0;
     left: 0;

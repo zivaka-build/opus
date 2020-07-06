@@ -27,11 +27,6 @@ class Nav extends React.Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
-              <li className="nav-item active">
-                <a className="nav-link" href="/">
-                  Home <span className="sr-only">(current)</span>
-                </a>
-              </li>
               <li className="nav-item">
                 <a className="nav-link" href="/roshni">
                   Roshni
@@ -57,16 +52,13 @@ class Nav extends React.Component {
                   Media Center
                 </a>
               </li>
+              <li className="nav-item active">
+                <a className="nav-link" href="/mediacenter">
+                  Donate Now
+                </a>
+              </li>
             </ul>
-            <a
-              href="https://rzp.io/l/jvLArNx"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn py-0"
-              style={{ cursor: "pointer" }}
-            >
-              <img src={require("./../../assets/img/donate_now.png")} width={160} alt="razor pay donate button" />
-            </a>
+            
           </div>
         </div>
       </nav>
