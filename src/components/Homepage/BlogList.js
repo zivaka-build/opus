@@ -21,6 +21,18 @@ class BlogList extends React.Component {
                 });
                 this.setState({ events });
             });
+        axios
+            .get("http://35.184.242.240:1337/recentevents/1")
+            .then(({ data }) => {
+                const events = data.events.map((event) => {
+                    const { headline, link, created_at } = event;
+                    const date = new Date(
+                        Date.parse(created_at)
+                    ).toDateString();
+                    return { headline, link, date };
+                });
+                this.setState({ events });
+            });
     }
 
     render() {
