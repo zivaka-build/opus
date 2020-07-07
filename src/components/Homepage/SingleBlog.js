@@ -5,44 +5,50 @@ import RecentPosts from "./RecentPosts";
 
 class SingleBlog extends React.Component {
     state = {
-        Title: "",
-        BlogIntro: "",
+        title: "",
+        blogIntro: "",
         postDate: "",
         tag: "",
         author: {},
         blogbody: "",
+        blogListId: "",
         preview: "",
         fullBlog: false,
         imgSrc: "",
         showButton: true,
+        sendProps: false,
     };
 
     componentDidMount() {
-        const blogId = window.location.pathname.split("/")[2];
         axios
-            .get("http://35.184.242.240:1337/blogs/" + blogId)
+            .get("http://35.184.242.240:1337/blogarticles/" + this.props.blogId)
             .then(({ data }) => {
                 const root = "http://35.184.242.240:1337";
                 const {
-                    Title,
-                    BlogIntro,
+                    title,
+                    blogIntro,
                     postdate: postDate,
                     tag,
-                    author,
+                    Author,
                     blogbody,
                 } = data;
+                const { id: blogListId } = data.bloglist;
 
                 const preview = blogbody.substring(0, 200);
-                const imgSrc = data.dpimg ? root + data.dpimg : "";
+                const imgSrc = data.dpimg
+                    ? root + data.dpimg.formats.medium.url
+                    : "";
                 this.setState({
-                    Title,
-                    BlogIntro,
+                    title,
+                    blogIntro,
                     postDate,
                     tag,
-                    author,
+                    author: Author,
                     blogbody,
                     preview,
                     imgSrc,
+                    blogListId,
+                    sendProps: true,
                 });
             })
             .catch(console.error);
@@ -57,7 +63,7 @@ class SingleBlog extends React.Component {
                             <article>
                                 <header>
                                     <h2 className="blog-post-title">
-                                        {this.state.Title}
+                                        {this.state.title}
                                     </h2>
                                     <p className="blog-post-meta">
                                         <i className="far fa-clock" />{" "}
@@ -106,7 +112,11 @@ class SingleBlog extends React.Component {
                                 ) : null}
                             </article>
                         </div>
-                        <RecentPosts />
+                        {this.state.sendProps ? (
+                            <RecentPosts
+                                listId={this.state.blogListId.toString()}
+                            />
+                        ) : null}
                     </div>
                 </div>
             </section>

@@ -16,12 +16,12 @@ function App() {
     return (
         <Router>
             <Opus path="/" />
-            <Roshni path="/roshni" />
+            <Roshni exact path="/roshni" />
             <Metr path="/metr" />
             <Aashakiran path="/aashakiran" />
             <AboutUs path="/about" />
-            <MediaCenter path="/mediacenter" />
-            <SingleBlogPage path="/blog/:id" />
+            <MediaCenter path="/media" />
+            <SingleBlogPage exact path="/blog/:blogId" />
         </Router>
     );
 }

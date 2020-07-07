@@ -27,7 +27,6 @@ const MediaCentre = () => {
             {/* BLOGlIST SECTION */}
             <BlogList />
 
-
             {/* TEAM */}
             {/* <Team /> */}
 

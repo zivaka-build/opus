@@ -32,7 +32,7 @@ const Opus = () => {
             <Article />
 
             {/* STORY */}
-            <ShowPanel title="Milestones" id="4" />
+            <ShowPanel title="" id="4" />
 
             {/* DONATE NOW & VOLUNTEER SECTION */}
             <Involve />

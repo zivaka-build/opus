@@ -32,7 +32,7 @@ const AboutUs = () => {
             <Involve />
 
             {/* ARTICLES */}
-            {/* <Article /> */}
+            <Article />
 
             {/* CurrentProjects */}
             {/* <CurrentProjects /> */}
