@@ -34,12 +34,12 @@ class Nav extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/metr">
-                  MetR
+                  metR
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/aashakiran">
-                  AshaKiran
+                  AashaKiran
                 </a>
               </li>
               <li className="nav-item">
@@ -53,7 +53,7 @@ class Nav extends React.Component {
                 </a>
               </li>
               <li className="nav-item active">
-                <a className="nav-link" href="/mediacenter">
+                <a className="nav-link" href="https://rzp.io/l/jvLArNx">
                   Donate Now
                 </a>
               </li>
