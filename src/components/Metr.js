@@ -12,6 +12,7 @@ import Footer from "./Homepage/Footer";
 import Gallery from "./Homepage/Gallery";
 import Testimonials from "./Homepage/Testimonials";
 import OurStory from "./Homepage/OurStory";
+import ShowPanel from "./Homepage/ShowPanel";
 
 const Metr = () => {
     return (
@@ -21,6 +22,9 @@ const Metr = () => {
 
             {/* ABOUT SECTION */}
             <OurStory aboutId="2" />
+
+            {/* MILESTONE */}
+            <ShowPanel id="3" title="Milestones" />
 
             {/* QUOTE SECTION */}
             <Quote />

@@ -8,6 +8,7 @@ import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import Involve from "./Homepage/Involve";
 import Testimonial from "./Homepage/Testimonial";
+import ShowPanel from "./Homepage/ShowPanel";
 
 const AboutUs = () => {
     return (
@@ -20,6 +21,9 @@ const AboutUs = () => {
 
             {/* BOXES */}
             <LogosPanel />
+
+            {/* MILESTONE */}
+            <ShowPanel id="5" title="Milestones" />
 
             {/* Testimonial SECTION */}
             <Testimonial />

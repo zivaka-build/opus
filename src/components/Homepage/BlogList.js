@@ -45,7 +45,7 @@ class BlogList extends React.Component {
                             <hr />
                             <ul>
                                 {this.state.events.map((event) => (
-                                    <li>
+                                    <li key={event.date}>
                                         <a
                                             target="_blank"
                                             rel="noopener noreferrer"

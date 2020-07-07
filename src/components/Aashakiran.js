@@ -9,8 +9,8 @@ import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import Gallery from "./Homepage/Gallery";
 import Team from "./Homepage/Team";
-import Milestone from "./Homepage/Milestone";
 import CurrentProjects from "./Homepage/CurrentProjects";
+import ShowPanel from "./Homepage/ShowPanel";
 
 const Ashakiran = () => {
     return (
@@ -22,7 +22,7 @@ const Ashakiran = () => {
             <OurStory aboutId="3" />
 
             {/* MILESTONE */}
-            <Milestone />
+            <ShowPanel id="2" title="Milestones" />
 
             {/* QUOTE SECTION */}
             <Quote />
