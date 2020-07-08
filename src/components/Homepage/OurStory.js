@@ -8,6 +8,7 @@ class OurStory extends React.Component {
         textblock2: "",
         title: "",
         name: "",
+        details: "",
     };
 
     componentDidMount() {
@@ -16,12 +17,12 @@ class OurStory extends React.Component {
                 "http://35.184.242.240:1337/aboutsections/" + this.props.aboutId
             )
             .then(({ data }) => {
-                const { title, textblock1, textblock2, details: name } = data;
+                const { title, textblock1, textblock2, name, details } = data;
                 const imgSrc =
                     "http://35.184.242.240:1337" +
                     data.dpimage.formats.thumbnail.url;
                 console.log(imgSrc);
-                this.setState({ title, textblock1, textblock2, name, imgSrc });
+                this.setState({ title, textblock1, textblock2, name, imgSrc, details });
             });
     }
 
@@ -37,7 +38,8 @@ class OurStory extends React.Component {
                                 alt=""
                                 class="img-fluid rounded-circle mb-2"
                             />
-                            <h5>{this.state.name}</h5>
+                            <h4>{this.state.name}</h4>
+                            <p>{this.state.details}</p>
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 panel-right">
                             <h1 class="text-center">{this.state.title}</h1>
