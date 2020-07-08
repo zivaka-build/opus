@@ -33,7 +33,7 @@ const Metr = () => {
             <LogosPanel />
 
             {/* ARTICLES */}
-            <Article />
+            <Article articleId="3" />
 
             {/* STORY */}
             <Story />

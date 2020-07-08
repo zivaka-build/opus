@@ -8,6 +8,7 @@ import Footer from "./Homepage/Footer";
 import BlogList from "./Homepage/BlogList";
 import Showcase from "./Homepage/Showcase";
 import Milestone from "./Homepage/Milestone";
+import Article from "./Homepage/Article";
 
 const MediaCentre = () => {
     return (
@@ -20,6 +21,9 @@ const MediaCentre = () => {
 
             {/* QUOTE SECTION */}
             <Quote />
+
+            {/* ARTICLES */}
+            <Article articleId="5" />
 
             {/* Milestone */}
             <Milestone />

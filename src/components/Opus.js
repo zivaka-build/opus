@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
-import Article from "./Homepage/ref";
+import Article from "./Homepage/Article";
 import LogosPanel from "./Homepage/LogosPanel";
 import Contact from "./Homepage/Contact";
 import Involve from "./Homepage/Involve";
@@ -29,7 +29,7 @@ const Opus = () => {
             <LogosPanel />
 
             {/* ARTICLES */}
-            <Article />
+            <Article articleId="1" />
 
             {/* STORY */}
             <ShowPanel title="" id="4" />

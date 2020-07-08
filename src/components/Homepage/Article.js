@@ -13,7 +13,10 @@ class Article extends React.Component {
         const root = "http://35.184.242.240:1337";
 
         axios
-            .get("http://35.184.242.240:1337/articlesections/1")
+            .get(
+                "http://35.184.242.240:1337/articlesections/" +
+                    this.props.articleId
+            )
             .then(({ data }) => {
                 const articles = data.articletiles.map((article) => {
                     const {

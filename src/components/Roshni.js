@@ -27,7 +27,7 @@ const Roshni = () => {
             <Quote />
 
             {/* ARTICLES */}
-            <Article />
+            <Article articleId="2" />
 
             {/* TEAM */}
             <Team />

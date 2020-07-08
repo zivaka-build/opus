@@ -28,7 +28,7 @@ const Ashakiran = () => {
             <Quote />
 
             {/* ARTICLES */}
-            <Article />
+            <Article articleId="4" />
 
             {/* TEAM */}
             <Team />
