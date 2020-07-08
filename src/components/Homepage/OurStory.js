@@ -16,7 +16,7 @@ class OurStory extends React.Component {
                 "http://35.184.242.240:1337/aboutsections/" + this.props.aboutId
             )
             .then(({ data }) => {
-                const { title, textblock1, textblock2, name } = data;
+                const { title, textblock1, textblock2, details: name } = data;
                 const imgSrc =
                     "http://35.184.242.240:1337" +
                     data.dpimage.formats.thumbnail.url;
