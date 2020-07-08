@@ -24,16 +24,16 @@ const Roshni = () => {
             <ShowPanel id="1" title="Milestones" />
 
             {/* QUOTE SECTION */}
-            <Quote />
+            <Quote quoteId="3" />
 
             {/* ARTICLES */}
             <Article articleId="2" />
 
             {/* TEAM */}
-            <Team />
+            {/* <Team /> */}
 
             {/* CurrentProjects */}
-            <CurrentProjects />
+            {/* <CurrentProjects /> */}
 
             {/* STORY */}
             {/* <Story /> */}

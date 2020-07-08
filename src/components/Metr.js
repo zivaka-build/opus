@@ -10,7 +10,7 @@ import Contact from "./Homepage/Contact";
 import Involve from "./Homepage/Involve";
 import Footer from "./Homepage/Footer";
 import Gallery from "./Homepage/Gallery";
-import Testimonials from "./Homepage/Testimonials";
+import Testimonial from "./Homepage/Testimonial";
 import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
 
@@ -27,25 +27,16 @@ const Metr = () => {
             <ShowPanel id="3" title="Milestones" />
 
             {/* QUOTE SECTION */}
-            <Quote />
-
-            {/* BOXES */}
-            <LogosPanel />
+            <Quote quoteId="4" />
 
             {/* ARTICLES */}
             <Article articleId="3" />
 
             {/* STORY */}
-            <Story />
-
-            {/* DONATE NOW & VOLUNTEER SECTION */}
-            <Involve />
-
-            {/* GALLERY */}
-            <Gallery />
+            {/* <Story /> */}
 
             {/* TESTIMONIALS SECTION */}
-            <Testimonials />
+            <Testimonial />
 
             {/* CONTACT US SECTION */}
             <Contact />

@@ -22,17 +22,14 @@ const AboutUs = () => {
             {/* BOXES */}
             <LogosPanel />
 
-            {/* MILESTONE */}
-            <ShowPanel id="5" title="Milestones" />
-
             {/* Testimonial SECTION */}
             <Testimonial />
 
             {/* DONATE NOW & VOLUNTEER SECTION */}
             <Involve />
 
-            {/* ARTICLES */}
-            <Article />
+            {/* MILESTONE */}
+            <ShowPanel id="5" />
 
             {/* CurrentProjects */}
             {/* <CurrentProjects /> */}

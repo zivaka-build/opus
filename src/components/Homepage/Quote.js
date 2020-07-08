@@ -9,7 +9,7 @@ class Quotes extends React.Component {
 
     componentDidMount() {
         axios
-            .get("http://35.184.242.240:1337/quotes/2")
+            .get("http://35.184.242.240:1337/quotes/" + this.props.quoteId)
             .then(({ data }) => {
                 // console.log(data);
                 this.setState({ quote: data });

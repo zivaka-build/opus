@@ -25,22 +25,19 @@ const Ashakiran = () => {
             <ShowPanel id="2" title="Milestones" />
 
             {/* QUOTE SECTION */}
-            <Quote />
+            <Quote quoteId="5" />
 
             {/* ARTICLES */}
             <Article articleId="4" />
 
             {/* TEAM */}
-            <Team />
+            {/* <Team /> */}
 
             {/* CurrentProjects */}
-            <CurrentProjects />
+            {/* <CurrentProjects /> */}
 
             {/* STORY */}
             {/* <Story /> */}
-
-            {/* GALLERY */}
-            <Gallery />
 
             {/* CONTACT US SECTION */}
             <Contact />

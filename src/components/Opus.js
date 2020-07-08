@@ -23,7 +23,7 @@ const Opus = () => {
             <Showcase />
 
             {/* QUOTE SECTION */}
-            <Quote />
+            <Quote quoteId="2" />
 
             {/* BOXES */}
             <LogosPanel />
