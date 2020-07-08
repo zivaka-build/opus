@@ -5,6 +5,7 @@ class CurrentProjects extends React.Component {
     state = {
         articles: [],
         headline: "",
+        heading: "",
     };
 
     componentDidMount() {
@@ -21,8 +22,8 @@ class CurrentProjects extends React.Component {
                         imgSrc: root + article.dpimg.formats.small.url,
                     };
                 });
-                const { headline } = data;
-                this.setState({ articles, headline });
+                const { headline, heading } = data;
+                this.setState({ articles, headline, heading });
             });
     }
 
@@ -31,7 +32,7 @@ class CurrentProjects extends React.Component {
             <section id="story" className="bg-alabaster">
                 <div className="container pb-2 pt-5">
                     <h1 class="text-primary text-center">
-                        {this.state.headline}
+                        {this.state.heading}
                     </h1>
                     {this.state.articles.map((article, index) => {
                         if (index % 2 === 0) {
