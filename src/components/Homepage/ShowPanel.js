@@ -14,7 +14,7 @@ class CurrentProjects extends React.Component {
             .then(({ data }) => {
                 const articles = data.storypanelwides.map((article) => {
                     return {
-                        headline: article.headline,
+                        headline: article.heading,
                         description: article.description,
                         knowmore: article.knowmore,
                         donatelink: article.donatelink,
