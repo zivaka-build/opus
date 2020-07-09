@@ -9,9 +9,10 @@ class Gallery extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-6 text-center">
-                <h1 className="display-4 mt-5 pt-5">
-                  Catalysing change with creative solutions An 80G Trust
-                </h1>
+                <h4 className="display-4 mt-5 pt-5">
+                  Catalysing change with creative solutions 
+                </h4>
+                <h5 className="display-4">An 80G Trust</h5>
                 {/* <p className="lead">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
                   tempora!

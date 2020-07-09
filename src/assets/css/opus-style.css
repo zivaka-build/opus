@@ -12,8 +12,11 @@ body {
 
 #showcase {
     position: relative;
-    background: url("../img/mountains.jpg");
+    background: url("../img/save-the-sundarbans.jpg");
     min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .showcasebanner {

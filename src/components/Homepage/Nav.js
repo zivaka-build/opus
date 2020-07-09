@@ -66,7 +66,7 @@ class Nav extends React.Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/aashakiran">
+                <a className="nav-link" href="/pragati">
                   Pragati
                 </a>
               </li>

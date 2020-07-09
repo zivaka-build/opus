@@ -11,6 +11,7 @@ import Aashakiran from "./components/Aashakiran";
 import AboutUs from "./components/AboutUs";
 import MediaCenter from "./components/MediaCentre";
 import SingleBlogPage from "./components/SingleBlogPage";
+import Pragati from "./components/Pragati";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Metr path="/metr" />
             <Aashakiran path="/aashakiran" />
             <AboutUs path="/about" />
+            <Pragati path="/pragati" />
             <MediaCenter path="/media" />
             <SingleBlogPage exact path="/blog/:blogId" />
         </Router>
