@@ -32,7 +32,7 @@ class Nav extends React.Component {
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href=""
+                  href="/about"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
                   aria-haspopup="true"
@@ -44,8 +44,11 @@ class Nav extends React.Component {
                   className="dropdown-menu bg-alabaster"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a className="dropdown-item" href="our_story.html">
+                  <a className="dropdown-item" href="/media">
                     Media Center
+                  </a>
+                  <a className="dropdown-item" href="/about">
+                    About Us
                   </a>
                 </div>
               </li>
