@@ -75,7 +75,7 @@ class Nav extends React.Component {
               </li>
 
               <li className="nav-item active">
-                <a className="nav-link" href="https://rzp.io/l/jvLArNx">
+                <a className="nav-link" href="https://rzp.io/l/lw35wig">
                   Donate Now
                 </a>
               </li>
