@@ -15,6 +15,9 @@ class Article extends React.Component {
     axios
       .get("http://35.184.242.240:1337/articlesections/" + this.props.articleId)
       .then(({ data }) => {
+        console.log(this.props.articleId);
+        console.log(data);
+        
         const articles = data.articletiles.map((article) => {
           const { id, tilename, introtxt, videolink, type, blogid } = article;
           const imgSrc = root + article.dpimg.formats.thumbnail.url;
@@ -103,7 +106,7 @@ class Article extends React.Component {
                       className="card card-inverse"
                       style={{ cursor: "pointer" }}
                     >
-                      <Link to={"/blog/" + article.blogid}>
+                      <Link to={"/blog/" + article.id}>
                         <div className="hover ehover12">
                           <img
                             className="card-img rounded-0"
