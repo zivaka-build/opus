@@ -31,17 +31,19 @@ class SingleBlogPage extends React.Component {
                 const root = "http://35.184.242.240:1337";
                 const {
                     title,
-                    blogIntro,
+                    blogintro: blogIntro,
                     postdate: postDate,
                     tag,
                     Author,
                     blogbody,
                 } = data;
+                console.log(data);
+                console.log(title);
                 const { id: blogListId } = data.bloglist;
 
                 const preview = blogbody.substring(0, 200);
                 const imgSrc = data.dpimg
-                    ? root + data.dpimg.formats.medium.url
+                    ? root + data.dpimg.formats.thumbnail.url
                     : "";
                 this.setState({
                     title,
