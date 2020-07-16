@@ -17,7 +17,6 @@ class SingleBlogPage extends React.Component {
         blogbody: "",
         blogListId: "",
         preview: "",
-        fullBlog: false,
         imgSrc: "",
         showButton: true,
         sendProps: false,
@@ -33,13 +32,12 @@ class SingleBlogPage extends React.Component {
                     title,
                     blogintro: blogIntro,
                     postdate: postDate,
-                    tag,
+                    tags: tag,
                     Author,
                     blogbody,
                 } = data;
+                console.log(data);
                 const { id: blogListId } = data.bloglist;
-
-                const preview = blogbody.substring(0, 200);
                 const imgSrc = data.dpimg ? root + data.dpimg.url : "";
                 this.setState({
                     title,
@@ -48,7 +46,6 @@ class SingleBlogPage extends React.Component {
                     tag,
                     author: Author,
                     blogbody,
-                    preview,
                     imgSrc,
                     blogListId,
                     sendProps: true,
@@ -86,8 +83,6 @@ class SingleBlogPage extends React.Component {
                                                 ? this.state.author.username
                                                 : ""}{" "}
                                             &nbsp;
-                                            <i className="far fa-folder-open" />{" "}
-                                            Issues Ins and Out &nbsp;
                                             <i className="fas fa-tags" />{" "}
                                             {this.state.tag}
                                         </p>
@@ -104,25 +99,7 @@ class SingleBlogPage extends React.Component {
                                         </figure>
                                     ) : null}
 
-                                    <p>
-                                        {this.state.fullBlog
-                                            ? this.state.blogbody
-                                            : this.state.preview + " ..."}
-                                    </p>
-                                    {this.state.showButton ? (
-                                        <a
-                                            href=""
-                                            onClick={(e) => {
-                                                e.preventDefault();
-                                                this.setState({
-                                                    fullBlog: true,
-                                                    showButton: false,
-                                                });
-                                            }}
-                                        >
-                                            Read More →
-                                        </a>
-                                    ) : null}
+                                    <p>{this.state.blogbody}</p>
                                 </article>
                             </div>
                             {this.state.sendProps ? (
