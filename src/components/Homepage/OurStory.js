@@ -20,7 +20,7 @@ class OurStory extends React.Component {
                 const { title, textblock1, textblock2, name, details } = data;
                 const imgSrc =
                     "http://35.184.242.240:1337" +
-                    data.dpimage.formats.thumbnail.url;
+                    data.dpimage.url;
                 console.log(imgSrc);
                 this.setState({ title, textblock1, textblock2, name, imgSrc, details });
             });
