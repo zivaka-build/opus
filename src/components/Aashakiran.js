@@ -7,9 +7,6 @@ import Article from "./Homepage/Article";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
-import Gallery from "./Homepage/Gallery";
-import Team from "./Homepage/Team";
-import CurrentProjects from "./Homepage/CurrentProjects";
 import ShowPanel from "./Homepage/ShowPanel";
 
 const Ashakiran = () => {

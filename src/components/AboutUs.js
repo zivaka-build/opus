@@ -2,7 +2,6 @@
 import React, { Fragment } from "react";
 import LogosPanel from "./Homepage/LogosPanel";
 import Nav from "./Homepage/Nav";
-import Article from "./Homepage/Article";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";

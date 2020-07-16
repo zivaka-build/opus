@@ -7,9 +7,7 @@ import Article from "./Homepage/Article";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
-import Team from "./Homepage/Team";
 import ShowPanel from "./Homepage/ShowPanel";
-import CurrentProjects from "./Homepage/CurrentProjects";
 
 const Roshni = () => {
     return (
