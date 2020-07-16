@@ -50,6 +50,9 @@ class Nav extends React.Component {
                   <a className="dropdown-item" href="/about">
                     About Us
                   </a>
+                  <a className="dropdown-item" href="/contact">
+                    Contact Us
+                  </a>
                 </div>
               </li>
               <li className="nav-item">

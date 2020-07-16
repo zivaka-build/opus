@@ -12,6 +12,7 @@ import AboutUs from "./components/AboutUs";
 import MediaCenter from "./components/MediaCentre";
 import SingleBlogPage from "./components/SingleBlogPage";
 import Pragati from "./components/Pragati";
+import Contact from "./components/Contact";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
             <Metr path="/metr" />
             <Aashakiran path="/aashakiran" />
             <AboutUs path="/about" />
+            <Contact path="/contact" />
             <Pragati path="/pragati" />
             <MediaCenter path="/media" />
             <SingleBlogPage exact path="/blog/:blogId" />
