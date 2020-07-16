@@ -8,115 +8,107 @@ import RecentPosts from "./Homepage/RecentPosts";
 import { navigate } from "@reach/router";
 
 class SingleBlogPage extends React.Component {
-    state = {
-        title: "",
-        blogIntro: "",
-        postDate: "",
-        tag: "",
-        author: {},
-        blogbody: "",
-        blogListId: "",
-        preview: "",
-        imgSrc: "",
-        showButton: true,
-        sendProps: false,
-    };
+  state = {
+    title: "",
+    blogIntro: "",
+    postDate: "",
+    tag: "",
+    author: {},
+    blogbody: "",
+    blogListId: "",
+    preview: "",
+    imgSrc: "",
+    showButton: true,
+    sendProps: false,
+  };
 
-    componentDidMount() {
-        const blogId = window.location.pathname.split("/")[2];
-        axios
-            .get("http://35.184.242.240:1337/blogarticles/" + blogId)
-            .then(({ data }) => {
-                const root = "http://35.184.242.240:1337";
-                const {
-                    title,
-                    blogintro: blogIntro,
-                    postdate: postDate,
-                    tags: tag,
-                    Author,
-                    blogbody,
-                } = data;
-                console.log(data);
-                const { id: blogListId } = data.bloglist;
-                const imgSrc = data.dpimg ? root + data.dpimg.url : "";
-                this.setState({
-                    title,
-                    blogIntro,
-                    postDate,
-                    tag,
-                    author: Author,
-                    blogbody,
-                    imgSrc,
-                    blogListId,
-                    sendProps: true,
-                });
-            })
-            .catch(console.error);
-    }
+  componentDidMount() {
+    const blogId = window.location.pathname.split("/")[2];
+    axios
+      .get("http://35.184.242.240:1337/blogarticles/" + blogId)
+      .then(({ data }) => {
+        const root = "http://35.184.242.240:1337";
+        const {
+          title,
+          blogintro: blogIntro,
+          postdate: postDate,
+          tags: tag,
+          Author,
+          blogbody,
+        } = data;
+        console.log(data);
+        const { id: blogListId } = data.bloglist;
+        const imgSrc = data.dpimg ? root + data.dpimg.url : "";
+        this.setState({
+          title,
+          blogIntro,
+          postDate,
+          tag,
+          author: Author,
+          blogbody,
+          imgSrc,
+          blogListId,
+          sendProps: true,
+        });
+      })
+      .catch(console.error);
+  }
 
-    changeBlog(id) {
-        navigate("/blog/" + id);
-        this.componentDidMount();
-    }
+  changeBlog(id) {
+    navigate("/blog/" + id);
+    this.componentDidMount();
+  }
 
-    render() {
-        return (
-            <Fragment>
-                {/* NavBar */}
-                <Nav />
+  render() {
+    return (
+      <Fragment>
+        {/* NavBar */}
+        <Nav />
 
-                {/* SingleBlog */}
-                <section className="blog-container">
-                    <div className="container mt-2">
-                        <div className="row">
-                            <div className="col-lg-7 col-xs 12 main-blog-content container">
-                                <article>
-                                    <header>
-                                        <h2 className="blog-post-title">
-                                            {this.state.title}
-                                        </h2>
-                                        <p className="blog-post-meta">
-                                            <i className="far fa-clock" />{" "}
-                                            {this.state.postDate} &nbsp;
-                                            <i className="fas fa-user" />{" "}
-                                            {this.state.author
-                                                ? this.state.author.username
-                                                : ""}{" "}
-                                            &nbsp;
-                                            <i className="fas fa-tags" />{" "}
-                                            {this.state.tag}
-                                        </p>
-                                    </header>
-                                    {this.state.imgSrc ? (
-                                        <figure>
-                                            <img
-                                                src={this.state.imgSrc}
-                                                alt="single blog page"
-                                            />
-                                            {/* <figcaption>
+        {/* SingleBlog */}
+        <section className="blog-container">
+          <div className="container mt-2">
+            <div className="row">
+              <div className="col-lg-7 col-xs 12 main-blog-content container">
+                <article>
+                  <header>
+                    <h2 className="blog-post-title">{this.state.title}</h2>
+                    <p className="blog-post-meta">
+                      <i className="far fa-clock" /> {this.state.postDate}{" "}
+                      &nbsp;
+                      <i className="fas fa-user" />{" "}
+                      {this.state.author ? this.state.author.username : ""}{" "}
+                      &nbsp;
+                      <i className="fas fa-tags" /> {this.state.tag}
+                    </p>
+                  </header>
+                  {this.state.imgSrc ? (
+                    <figure>
+                      <img src={this.state.imgSrc} alt="single blog page" />
+                      {/* <figcaption>
                                             Caption for the image
                                         </figcaption> */}
-                                        </figure>
-                                    ) : null}
+                    </figure>
+                  ) : null}
 
-                                    <p>{this.state.blogbody}</p>
-                                </article>
-                            </div>
-                            {this.state.sendProps ? (
-                                <RecentPosts
-                                    listId={this.state.blogListId.toString()}
-                                    swithFunc={this.changeBlog.bind(this)}
-                                />
-                            ) : null}
-                        </div>
-                    </div>
-                </section>
+                  <p>{this.state.blogbody}</p>
+                </article>
+              </div>
+              {this.state.sendProps ? (
+                <RecentPosts
+                  listId={this.state.blogListId.toString()}
+                  swithFunc={this.changeBlog.bind(this)}
+                />
+              ) : null}
+            </div>
+          </div>
+        </section>
 
-                {/* FOOTER */}
-                <Footer />
-            </Fragment>
-        );
-    }
+        {/* FOOTER */}
+        <Footer />
+      </Fragment>
+    );
+  }
 }
 
 export default SingleBlogPage;
