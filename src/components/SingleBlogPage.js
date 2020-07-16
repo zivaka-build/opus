@@ -37,14 +37,10 @@ class SingleBlogPage extends React.Component {
                     Author,
                     blogbody,
                 } = data;
-                console.log(data);
-                console.log(title);
                 const { id: blogListId } = data.bloglist;
 
                 const preview = blogbody.substring(0, 200);
-                const imgSrc = data.dpimg
-                    ? root + data.dpimg.formats.thumbnail.url
-                    : "";
+                const imgSrc = data.dpimg ? root + data.dpimg.url : "";
                 this.setState({
                     title,
                     blogIntro,
