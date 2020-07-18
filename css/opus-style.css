@@ -345,8 +345,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.3rem;
-  padding-top: 2rem;
+  /* margin-bottom: 1.3rem; */
+  padding-top: 1rem;
 }
 
 .link__section li {
@@ -356,7 +356,8 @@ body {
 
 .link__section li a {
   padding: 0 4rem;
-  font-size: 35px;
+  font-size: 1.4rem;
+  color: #525152;
   
 }
 
@@ -364,7 +365,7 @@ body {
 @media (max-width: 1360px) {
   .link__section li a {
     padding: 0 2rem;
-    font-size: 28px;
+    font-size: 1.4rem;
     
   }
   
@@ -372,11 +373,11 @@ body {
 
 @media (max-width: 981px) {
   .link__section {
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .link__section li a {
     padding: 0 1rem;
-    font-size: 22px;
+    font-size: 1.4rem;
     
   }
 }
