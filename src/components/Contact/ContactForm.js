@@ -14,7 +14,7 @@ class ContactForm extends React.Component {
     const data = { email, brief, name };
     if (email && brief && name) {
       axios
-        .post("http://34.69.57.206:1337/contactlists", data)
+        .post("http://35.184.242.240:1337/contact", data)
         .then(({ data }) => {
           console.log(data);
           this.setState({
