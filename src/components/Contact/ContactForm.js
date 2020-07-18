@@ -74,6 +74,40 @@ class ContactForm extends React.Component {
                     placeholder
                   />
                 </div>
+                {/* Radio Button Section */}
+                <div className="py-2">
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      defaultValue="option1"
+                      defaultChecked
+                    />
+                    <label
+                      className="form-check-label"
+                      htmlFor="exampleRadios1"
+                    >
+                      Donate
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios2"
+                      defaultValue="option2"
+                    />
+                    <label
+                      className="form-check-label"
+                      htmlFor="exampleRadios2"
+                    >
+                      Volunteer
+                    </label>
+                  </div>
+                </div>
                 <div className="form-group">
                   <label htmlFor="brief">Brief</label>
                   <textarea
