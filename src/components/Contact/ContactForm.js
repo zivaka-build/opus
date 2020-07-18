@@ -81,13 +81,13 @@ class ContactForm extends React.Component {
                       className="form-check-input"
                       type="radio"
                       name="exampleRadios"
-                      id="exampleRadios1"
+                      id="donate"
                       defaultValue="option1"
                       defaultChecked
                     />
                     <label
                       className="form-check-label"
-                      htmlFor="exampleRadios1"
+                      htmlFor="donate"
                     >
                       Donate
                     </label>
@@ -97,17 +97,18 @@ class ContactForm extends React.Component {
                       className="form-check-input"
                       type="radio"
                       name="exampleRadios"
-                      id="exampleRadios2"
+                      id="volunteer"
                       defaultValue="option2"
                     />
                     <label
                       className="form-check-label"
-                      htmlFor="exampleRadios2"
+                      htmlFor="volunteer"
                     >
                       Volunteer
                     </label>
                   </div>
                 </div>
+                {/* Radio Button Section */}
                 <div className="form-group">
                   <label htmlFor="brief">Brief</label>
                   <textarea
