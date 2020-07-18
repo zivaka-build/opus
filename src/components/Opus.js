@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
+import Navigation from "./Homepage/Navigation";
 import Article from "./Homepage/Article";
 import LogosPanel from "./Homepage/LogosPanel";
 import Contact from "./Homepage/Contact";
@@ -18,6 +19,9 @@ const Opus = () => {
         <Fragment>
             {/* NavBar */}
             <Nav />
+
+            {/* Navigation */}
+            <Navigation />
 
             {/* SHOWCASE */}
             <Showcase />
