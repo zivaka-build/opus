@@ -22,7 +22,7 @@ const Ashakiran = () => {
             <ShowPanel id="2" title="Milestones" />
 
             {/* QUOTE SECTION */}
-            <Quote quoteId="5" />
+            <Quote quoteId="1" />
 
             {/* ARTICLES */}
             <Article articleId="4" />
