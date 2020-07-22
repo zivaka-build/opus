@@ -8,38 +8,41 @@ import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
+import Navigation from "./Homepage/Navigation";
 
 const Metr = () => {
-    return (
-        <Fragment>
-            {/* NavBar */}
-            <Nav />
+  return (
+    <Fragment>
+      {/* NavBar */}
+      <Nav />
 
-            {/* ABOUT SECTION */}
-            <OurStory aboutId="2" />
+      <Navigation />
 
-            {/* MILESTONE */}
-            <ShowPanel id="3" title="Milestones" />
+      {/* ABOUT SECTION */}
+      <OurStory aboutId="2" />
 
-            {/* QUOTE SECTION */}
-            <Quote quoteId="4" />
+      {/* MILESTONE */}
+      <ShowPanel id="3" title="Milestones" />
 
-            {/* ARTICLES */}
-            <Article articleId="3" />
+      {/* QUOTE SECTION */}
+      <Quote quoteId="4" />
 
-            {/* STORY */}
-            {/* <Story /> */}
+      {/* ARTICLES */}
+      <Article articleId="3" />
 
-            {/* TESTIMONIALS SECTION */}
-            {/* <Testimonial /> */}
+      {/* STORY */}
+      {/* <Story /> */}
 
-            {/* CONTACT US SECTION */}
-            <Contact />
+      {/* TESTIMONIALS SECTION */}
+      {/* <Testimonial /> */}
 
-            {/* FOOTER */}
-            <Footer />
-        </Fragment>
-    );
+      {/* CONTACT US SECTION */}
+      <Contact />
+
+      {/* FOOTER */}
+      <Footer />
+    </Fragment>
+  );
 };
 
 export default Metr;

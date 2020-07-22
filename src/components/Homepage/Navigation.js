@@ -7,16 +7,16 @@ class Navigation extends React.Component {
       <div className="link__section">
         <ul>
           <li>
-            <a href="#">Vision</a>
+            <a href="#showcase">Vision</a>
           </li>
           <li>
-            <a href="#">Milestone</a>
+            <a href="#story">Milestone</a>
           </li>
-          <li>
-            <a href="#">Blogs</a>
-          </li>
-          <li>
+          {/* <li>
             <a href="#">Team</a>
+          </li> */}
+          <li>
+            <a href="#article">Blogs</a>
           </li>
           <li>
             <a href="#">Current Projects</a>

@@ -8,41 +8,44 @@ import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
+import Navigation from "./Homepage/Navigation";
 
 const Ashakiran = () => {
-    return (
-        <Fragment>
-            {/* NavBar */}
-            <Nav />
+  return (
+    <Fragment>
+      {/* NavBar */}
+      <Nav />
 
-            {/* ABOUT SECTION */}
-            <OurStory aboutId="3" />
+      <Navigation />
 
-            {/* MILESTONE */}
-            <ShowPanel id="2" title="Milestones" />
+      {/* ABOUT SECTION */}
+      <OurStory aboutId="3" />
 
-            {/* QUOTE SECTION */}
-            <Quote quoteId="1" />
+      {/* MILESTONE */}
+      <ShowPanel id="2" title="Milestones" />
 
-            {/* ARTICLES */}
-            <Article articleId="4" />
+      {/* QUOTE SECTION */}
+      <Quote quoteId="1" />
 
-            {/* TEAM */}
-            {/* <Team /> */}
+      {/* ARTICLES */}
+      <Article articleId="4" />
 
-            {/* CurrentProjects */}
-            {/* <CurrentProjects /> */}
+      {/* TEAM */}
+      {/* <Team /> */}
 
-            {/* STORY */}
-            {/* <Story /> */}
+      {/* CurrentProjects */}
+      {/* <CurrentProjects /> */}
 
-            {/* CONTACT US SECTION */}
-            <Contact />
+      {/* STORY */}
+      {/* <Story /> */}
 
-            {/* FOOTER */}
-            <Footer />
-        </Fragment>
-    );
+      {/* CONTACT US SECTION */}
+      <Contact />
+
+      {/* FOOTER */}
+      <Footer />
+    </Fragment>
+  );
 };
 
 export default Ashakiran;

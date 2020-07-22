@@ -8,12 +8,15 @@ import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
+import Navigation from "./Homepage/Navigation";
 
 const Pragati = () => {
     return (
         <Fragment>
             {/* NavBar */}
             <Nav />
+
+            <Navigation />
 
             {/* ABOUT SECTION */}
             <OurStory aboutId="2" />
