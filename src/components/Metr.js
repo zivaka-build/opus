@@ -36,6 +36,8 @@ const Metr = () => {
       {/* TESTIMONIALS SECTION */}
       {/* <Testimonial /> */}
 
+      <ShowPanel id="10" title="Current Initiative" />
+
       {/* CONTACT US SECTION */}
       <Contact />
 

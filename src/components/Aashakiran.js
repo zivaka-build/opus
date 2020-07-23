@@ -39,6 +39,8 @@ const Ashakiran = () => {
       {/* STORY */}
       {/* <Story /> */}
 
+      <ShowPanel id="8" title="Current Initiative" />
+
       {/* CONTACT US SECTION */}
       <Contact />
 

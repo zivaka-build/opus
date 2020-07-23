@@ -39,6 +39,8 @@ const Roshni = () => {
             {/* STORY */}
             {/* <Story /> */}
 
+            <ShowPanel id="9" title="Current Initiative" />
+
             {/* CONTACT US SECTION */}
             <Contact />
 

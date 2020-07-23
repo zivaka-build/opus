@@ -19,22 +19,24 @@ const Pragati = () => {
             <Navigation />
 
             {/* ABOUT SECTION */}
-            <OurStory aboutId="2" />
+            <OurStory aboutId="5" />
 
             {/* MILESTONE */}
-            <ShowPanel id="3" title="Milestones" />
+            <ShowPanel id="6" title="Milestones" />
 
             {/* QUOTE SECTION */}
-            <Quote quoteId="4" />
+            <Quote quoteId="5" />
 
             {/* ARTICLES */}
-            <Article articleId="3" />
+            <Article articleId="6" />
 
             {/* STORY */}
             {/* <Story /> */}
 
             {/* TESTIMONIALS SECTION */}
             {/* <Testimonial /> */}
+
+            <ShowPanel id="7" title="Current Initiative" />
 
             {/* CONTACT US SECTION */}
             <Contact />

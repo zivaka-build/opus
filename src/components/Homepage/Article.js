@@ -15,12 +15,12 @@ class Article extends React.Component {
     axios
       .get("http://35.184.242.240:1337/articlesections/" + this.props.articleId)
       .then(({ data }) => {
-        console.log(this.props.articleId);
+        /* console.log(this.props.articleId); */
         console.log(data);
 
         const articles = data.articletiles.map((article) => {
           const { id, tilename, introtxt, videolink, type, blogid } = article;
-          const imgSrc = root + article.dpimg.formats.thumbnail.url;
+          const imgSrc = root + article.dpimg.url;
           const iframe = document.getElementsByTagName("iframe")[0];
           // console.log(iframe);
 
