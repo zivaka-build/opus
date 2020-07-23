@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-class CurrentProjects extends React.Component {
+class ShowPanel extends React.Component {
   state = {
     articles: [],
     headline: "",
@@ -30,7 +30,7 @@ class CurrentProjects extends React.Component {
   render() {
     return (
       <section id="story" className="bg-alabaster richard">
-        <div className="container pb-2 pt-5">
+        <div className="container pb-3 pt-5">
           <h1 class="text-primary text-center">{this.state.heading}</h1>
           {this.state.articles.map((article, index) => {
             if (index % 2 === 0) {
@@ -105,4 +105,4 @@ class CurrentProjects extends React.Component {
   }
 }
 
-export default CurrentProjects;
+export default ShowPanel;

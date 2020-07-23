@@ -9,6 +9,7 @@ import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
 import Navigation from "./Homepage/Navigation";
+import CurrentProjects from "./Homepage/CurrentProjects";
 
 const Ashakiran = () => {
   return (
@@ -39,7 +40,7 @@ const Ashakiran = () => {
       {/* STORY */}
       {/* <Story /> */}
 
-      <ShowPanel id="8" title="Current Initiative" />
+      <CurrentProjects id="8" title="Current Initiative" />
 
       {/* CONTACT US SECTION */}
       <Contact />

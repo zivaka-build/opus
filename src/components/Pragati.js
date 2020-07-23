@@ -9,42 +9,43 @@ import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
 import Navigation from "./Homepage/Navigation";
+import CurrentProjects from "./Homepage/CurrentProjects";
 
 const Pragati = () => {
-    return (
-        <Fragment>
-            {/* NavBar */}
-            <Nav />
+  return (
+    <Fragment>
+      {/* NavBar */}
+      <Nav />
 
-            <Navigation />
+      <Navigation />
 
-            {/* ABOUT SECTION */}
-            <OurStory aboutId="5" />
+      {/* ABOUT SECTION */}
+      <OurStory aboutId="5" />
 
-            {/* MILESTONE */}
-            <ShowPanel id="6" title="Milestones" />
+      {/* MILESTONE */}
+      <ShowPanel id="6" title="Milestones" />
 
-            {/* QUOTE SECTION */}
-            <Quote quoteId="5" />
+      {/* QUOTE SECTION */}
+      <Quote quoteId="5" />
 
-            {/* ARTICLES */}
-            <Article articleId="6" />
+      {/* ARTICLES */}
+      <Article articleId="6" />
 
-            {/* STORY */}
-            {/* <Story /> */}
+      {/* STORY */}
+      {/* <Story /> */}
 
-            {/* TESTIMONIALS SECTION */}
-            {/* <Testimonial /> */}
+      {/* TESTIMONIALS SECTION */}
+      {/* <Testimonial /> */}
 
-            <ShowPanel id="7" title="Current Initiative" />
+      <CurrentProjects id="7" title="Current Initiative" />
 
-            {/* CONTACT US SECTION */}
-            <Contact />
+      {/* CONTACT US SECTION */}
+      <Contact />
 
-            {/* FOOTER */}
-            <Footer />
-        </Fragment>
-    );
+      {/* FOOTER */}
+      <Footer />
+    </Fragment>
+  );
 };
 
 export default Pragati;

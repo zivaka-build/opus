@@ -9,44 +9,45 @@ import BlogList from "./Homepage/BlogList";
 import Showcase from "./Homepage/Showcase";
 import Milestone from "./Homepage/Milestone";
 import Article from "./Homepage/Article";
+import ShowPanel from "./Homepage/ShowPanel";
 
 const MediaCentre = () => {
-    return (
-        <Fragment>
-            {/* NavBar */}
-            <Nav />
+  return (
+    <Fragment>
+      {/* NavBar */}
+      <Nav />
 
-            {/* SHOWCASE */}
-            <Showcase />
+      {/* SHOWCASE */}
+      <Showcase />
 
-            {/* QUOTE SECTION */}
-            <Quote />
+      {/* QUOTE SECTION */}
+      <Quote />
 
-            {/* ARTICLES */}
-            <Article articleId="5" />
+      {/* ARTICLES */}
+      <Article articleId="5" />
 
-            {/* Milestone */}
-            <Milestone />
+      {/* MILESTONE */}
+      <ShowPanel id="11" title="Milestones" />
 
-            {/* BLOGlIST SECTION */}
-            <BlogList />
+      {/* BLOGlIST SECTION */}
+      <BlogList />
 
-            {/* TEAM */}
-            {/* <Team /> */}
+      {/* TEAM */}
+      {/* <Team /> */}
 
-            {/* CurrentProjects */}
-            {/* <CurrentProjects /> */}
+      {/* CurrentProjects */}
+      {/* <CurrentProjects /> */}
 
-            {/* GALLERY */}
-            {/* <Gallery /> */}
+      {/* GALLERY */}
+      {/* <Gallery /> */}
 
-            {/* CONTACT US SECTION */}
-            <Contact />
+      {/* CONTACT US SECTION */}
+      <Contact />
 
-            {/* FOOTER */}
-            <Footer />
-        </Fragment>
-    );
+      {/* FOOTER */}
+      <Footer />
+    </Fragment>
+  );
 };
 
 export default MediaCentre;

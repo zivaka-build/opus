@@ -1,14 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from "react";
 
-import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
+import Navigation from "./Homepage/Navigation";
+import Footer from "./Homepage/Footer";
+
+import Quote from "./Homepage/Quote";
 import Article from "./Homepage/Article";
 import Contact from "./Homepage/Contact";
-import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
-import Navigation from "./Homepage/Navigation";
+import CurrentProjects from "./Homepage/CurrentProjects";
 
 const Metr = () => {
   return (
@@ -36,7 +38,7 @@ const Metr = () => {
       {/* TESTIMONIALS SECTION */}
       {/* <Testimonial /> */}
 
-      <ShowPanel id="10" title="Current Initiative" />
+      <CurrentProjects id="10" title="Current Initiative" />
 
       {/* CONTACT US SECTION */}
       <Contact />

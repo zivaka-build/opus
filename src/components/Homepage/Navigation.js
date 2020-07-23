@@ -19,7 +19,7 @@ class Navigation extends React.Component {
             <a href="#article">Blogs</a>
           </li>
           <li>
-            <a href="#">Current Projects</a>
+            <a href="#currentprojects">Current Projects</a>
           </li>
         </ul>
       </div>
