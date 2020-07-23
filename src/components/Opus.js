@@ -19,9 +19,6 @@ const Opus = () => {
             {/* NavBar */}
             <Nav />
 
-            {/* Navigation */}
-            {/* <Navigation /> */}
-
             {/* SHOWCASE */}
             <Showcase />
 

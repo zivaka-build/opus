@@ -29,7 +29,7 @@ class CurrentProjects extends React.Component {
 
   render() {
     return (
-      <section id="story" className="bg-alabaster">
+      <section id="story" className="bg-alabaster richard">
         <div className="container pb-2 pt-5">
           <h1 class="text-primary text-center">{this.state.heading}</h1>
           {this.state.articles.map((article, index) => {
@@ -60,7 +60,7 @@ class CurrentProjects extends React.Component {
                       </a>
                     ) : null}
                   </div>
-                  <div className="col-lg-6  col-md-6 col-12">
+                  <div className="col-lg-6 col-md-6 col-12">
                     <img src={article.imgSrc} className="img-fluid " alt="" />
                   </div>
                 </div>
@@ -68,7 +68,7 @@ class CurrentProjects extends React.Component {
             } else {
               return (
                 <div className="row pt-5">
-                  <div className="col-lg-6  col-md-6 col-12">
+                  <div className="col-lg-6 col-md-6 col-12">
                     <img src={article.imgSrc} className="img-fluid " alt="" />
                   </div>
                   <div className="col-lg-6  col-md-6 col-12 mb-5">
