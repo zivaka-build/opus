@@ -1,20 +1,27 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from "react";
 import axios from "axios";
+import { navigate } from "@reach/router";
 
 import Nav from "./Homepage/Nav";
 import Footer from "./Homepage/Footer";
 import RecentPosts from "./Homepage/RecentPosts";
-import { navigate } from "@reach/router";
+
+const ReactMarkdown = require("react-markdown/with-html");
+
+function replaceAll(string, search, replace) {
+  return string.split(search).join(replace);
+}
 
 class SingleBlogPage extends React.Component {
   state = {
+    base_url: "http://35.184.242.240:1337",
     title: "",
     blogIntro: "",
     postDate: "",
     tag: "",
     author: {},
-    blogbody: "",
+    blogbody: ``,
     blogListId: "",
     preview: "",
     imgSrc: "",
@@ -36,7 +43,6 @@ class SingleBlogPage extends React.Component {
           Author,
           blogbody,
         } = data;
-        console.log(data);
         const { id: blogListId } = data.bloglist;
         const imgSrc = data.dpimg ? root + data.dpimg.url : "";
         this.setState({
@@ -50,6 +56,12 @@ class SingleBlogPage extends React.Component {
           blogListId,
           sendProps: true,
         });
+        const search = "\n";
+        const replaceWith = "richard";
+        this.state.blogbody.split(search).join(replaceWith);
+        console.log(this.state.blogbody);
+
+        /* console.log(replaceAll(this.state.blogbody, '\n', 'richard')); */
       })
       .catch(console.error);
   }
@@ -91,7 +103,16 @@ class SingleBlogPage extends React.Component {
                     </figure>
                   ) : null}
 
-                  <p>{this.state.blogbody}</p>
+                  {/* <p>{this.state.blogbody}</p> */}
+                  <ReactMarkdown
+                    source={replaceAll(this.state.blogbody, "\n", "<br />")}
+                    escapeHtml={false}
+                    transformImageUri={(uri) =>
+                      uri.startsWith("http")
+                        ? uri
+                        : `${this.state.base_url}${uri}`
+                    }
+                  />
                 </article>
               </div>
               {this.state.sendProps ? (

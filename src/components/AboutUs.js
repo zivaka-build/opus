@@ -10,39 +10,39 @@ import Testimonial from "./Homepage/Testimonial";
 import ShowPanel from "./Homepage/ShowPanel";
 
 const AboutUs = () => {
-    return (
-        <Fragment>
-            {/* NavBar */}
-            <Nav />
+  return (
+    <Fragment>
+      {/* NavBar */}
+      <Nav />
 
-            {/* ABOUT SECTION */}
-            <OurStory aboutId="4" />
+      {/* ABOUT SECTION */}
+      <OurStory aboutId="4" />
 
-            {/* BOXES */}
-            <LogosPanel />
+      {/* BOXES */}
+      <LogosPanel />
 
-            {/* Testimonial SECTION */}
-            <Testimonial />
+      {/* Testimonial SECTION */}
+      <Testimonial />
 
-            {/* DONATE NOW & VOLUNTEER SECTION */}
-            <Involve />
+      {/* DONATE NOW & VOLUNTEER SECTION */}
+      <Involve />
 
-            {/* MILESTONE */}
-            <ShowPanel id="5" />
+      {/* MILESTONE */}
+      <ShowPanel id="5" />
 
-            {/* CurrentProjects */}
-            {/* <CurrentProjects /> */}
+      {/* CurrentProjects */}
+      {/* <CurrentProjects /> */}
 
-            {/* GALLERY */}
-            {/* <Gallery /> */}
+      {/* GALLERY */}
+      {/* <Gallery /> */}
 
-            {/* CONTACT US SECTION */}
-            <Contact />
+      {/* CONTACT US SECTION */}
+      <Contact />
 
-            {/* FOOTER */}
-            <Footer />
-        </Fragment>
-    );
+      {/* FOOTER */}
+      <Footer />
+    </Fragment>
+  );
 };
 
 export default AboutUs;
