@@ -28,7 +28,7 @@ class Nav extends React.Component {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ml-auto">
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
