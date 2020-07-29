@@ -425,7 +425,7 @@ body {
   
   .link__section li a {
     padding: 0 4rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: #525152;
     
   }
@@ -434,7 +434,7 @@ body {
   @media (max-width: 1360px) {
     .link__section li a {
       padding: 0 2rem;
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       
     }
     
@@ -446,7 +446,7 @@ body {
     }
     .link__section li a {
       padding: 0 1rem;
-      font-size: 1.4rem;
+      font-size: 1rem;
       
     }
   }
