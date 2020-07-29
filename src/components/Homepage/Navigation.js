@@ -7,7 +7,7 @@ class Navigation extends React.Component {
       <div className="link__section">
         <ul>
           <li>
-            <a href="#showcase">Vision</a>
+            <a href="#showcase">Focus</a>
           </li>
           <li>
             <a href="#story">Milestone</a>

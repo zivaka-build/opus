@@ -29,7 +29,7 @@ class ShowPanel extends React.Component {
 
   render() {
     return (
-      <section id="story" className="bg-alabaster richard">
+      <section id="story" className="bg-alabaster">
         <div className="container pb-3 pt-5">
           <h1 class="text-primary text-center">{this.state.heading}</h1>
           {this.state.articles.map((article, index) => {
