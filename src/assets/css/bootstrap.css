@@ -5754,7 +5754,8 @@ a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #26707f !important;
+  /* background-color: #26707f !important; */
+  background-color: rgb(33, 37, 41) !important;
 }
 
 .bg-secondary {

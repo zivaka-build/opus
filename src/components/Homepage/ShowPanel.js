@@ -31,7 +31,7 @@ class ShowPanel extends React.Component {
     return (
       <section id="story" className="bg-alabaster">
         <div className="container pb-3 pt-5">
-          <h1 class="text-primary text-center">{this.state.heading}</h1>
+          <h3 class="text-primary text-center">{this.state.heading}</h3>
           {this.state.articles.map((article, index) => {
             if (index % 2 === 0) {
               return (
