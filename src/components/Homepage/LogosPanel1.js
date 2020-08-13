@@ -1,8 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import axios from "axios";
 
-class LogosPanel extends React.Component {
+class LogosPanel1 extends React.Component {
   state = {
     logos: [],
   };
@@ -21,7 +20,7 @@ class LogosPanel extends React.Component {
           logos[index] = {
             name: logo_name,
             url: `${root}${logoObj.formats[format].url}`,
-            href: `${logo_name.split("logo")[0]}`,
+            href: `${logo_name.replace("logo","cp")}`,
           };
         });
         this.setState({ logos });
@@ -58,4 +57,4 @@ class LogosPanel extends React.Component {
   }
 }
 
-export default LogosPanel;
+export default LogosPanel1;

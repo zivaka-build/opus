@@ -456,6 +456,34 @@ body {
       display: none;
     }
   }
+
+  .teamcard {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
   
+  /* On mouse-over, add a deeper shadow */
+  .teamcard:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
   
+  /* Add some padding inside the card container */
+  .teamcardcontainer {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   
+
+  .team-social a {
+    font-size: 35px;
+    color: #525152;
+  }
+  
+  .team-social {
+    padding-top: 0.5rem;
+  }

@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from "react";
 
+import TeamCard from "./Homepage/TeamCard"
+import LogosPanel from "./Homepage/LogosPanel"
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
 import Article from "./Homepage/Article";
@@ -16,20 +18,21 @@ const Pragati = () => {
     <Fragment>
       {/* NavBar */}
       <Nav />
-
-      <Navigation />
+      <LogosPanel />
+      {/*<Navigation />*/}
 
       {/* ABOUT SECTION */}
       <OurStory aboutId="5" />
 
       {/* MILESTONE */}
-      <ShowPanel id="6" title="Milestones" />
+      {/*<ShowPanel id="6" title="Milestones" />*/}
 
       {/* QUOTE SECTION */}
-      <Quote quoteId="5" />
+      {/*<Quote quoteId="5" />*/}
 
       {/* ARTICLES */}
       <Article articleId="6" />
+      <TeamCard />
 
       {/* STORY */}
       {/* <Story /> */}
@@ -37,7 +40,7 @@ const Pragati = () => {
       {/* TESTIMONIALS SECTION */}
       {/* <Testimonial /> */}
 
-      <CurrentProjects id="7" title="Current Initiative" />
+      {/*<CurrentProjects id="7" title="Current Initiative" />*/}
 
       {/* CONTACT US SECTION */}
       <Contact />

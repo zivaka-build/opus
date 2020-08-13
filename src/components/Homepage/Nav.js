@@ -55,7 +55,7 @@ class Nav extends React.Component {
                   </a>
                 </div>
               </li>
-              <li className="nav-item">
+              {/*<li className="nav-item">
                 <a className="nav-link" href="/metr">
                   metR
                 </a>
@@ -75,7 +75,22 @@ class Nav extends React.Component {
                 <a className="nav-link" href="/pragati">
                   Pragati
                 </a>
-              </li>
+    </li>*/}
+                <li className="nav-item">
+                <a className="nav-link" href="/cp">
+                  Current Projects
+                </a>
+               </li>
+               <li className="nav-item">
+                <a className="nav-link" href="/ms">
+                  Milestones
+                </a>
+    </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/initiative">
+                  Initiative
+                </a>
+    </li>
 
               <li className="nav-item active">
                 <a className="nav-link" href="https://rzp.io/l/lw35wig">

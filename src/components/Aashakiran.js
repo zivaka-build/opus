@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from "react";
 
+import TeamCard from "./Homepage/TeamCard"
+import LogosPanel from "./Homepage/LogosPanel"
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
 import Article from "./Homepage/Article";
@@ -16,20 +18,21 @@ const Ashakiran = () => {
     <Fragment>
       {/* NavBar */}
       <Nav />
-
-      <Navigation />
+      <LogosPanel />
+      {/*<Navigation />*/}
 
       {/* ABOUT SECTION */}
       <OurStory aboutId="3" />
 
       {/* MILESTONE */}
-      <ShowPanel id="2" title="Milestones" />
+      {/*<ShowPanel id="2" title="Milestones" />*/}
 
       {/* QUOTE SECTION */}
-      <Quote quoteId="1" />
+      {/*<Quote quoteId="1" />*/}
 
       {/* ARTICLES */}
       <Article articleId="4" />
+      <TeamCard />
 
       {/* TEAM */}
       {/* <Team /> */}
@@ -40,7 +43,7 @@ const Ashakiran = () => {
       {/* STORY */}
       {/* <Story /> */}
 
-      <CurrentProjects id="8" title="Current Initiative" />
+      {/*<CurrentProjects id="8" title="Current Initiative" />*/}
 
       {/* CONTACT US SECTION */}
       <Contact />
