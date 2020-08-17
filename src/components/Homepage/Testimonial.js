@@ -48,7 +48,8 @@ class Testimonial extends React.Component {
                 }
                 key={testimonial.name}
               >
-                <div className="testimonial">
+                <div className="row">
+                <div className="col-lg-6 testimonial">
                   {/*Avatar*/}
                   <div className="avatar mb-4">
                     <p className="text-center">
@@ -72,6 +73,32 @@ class Testimonial extends React.Component {
                   <h6 className="font-weight-bold my-3 text-center">
                     {testimonial.desc}
                   </h6>
+                </div>
+                <div className="col-lg-6 testimonial">
+                  {/*Avatar*/}
+                  <div className="avatar mb-4">
+                    <p className="text-center">
+                      <img
+                        src={testimonial.imgSrc}
+                        className="rounded-circle img-fluid avatar-image"
+                        alt={testimonial.name}
+                      />
+                    </p>
+                  </div>
+                  {/*Content*/}
+                  <div className="container">
+                    <p className="textimonial-text text-center">
+                      <i className="fas fa-quote-left" /> {testimonial.message}
+                      <i className="fas fa-quote-right" />
+                    </p>
+                  </div>
+                  <h4 className="font-weight-bold text-center">
+                    {testimonial.name}
+                  </h4>
+                  <h6 className="font-weight-bold my-3 text-center">
+                    {testimonial.desc}
+                  </h6>
+                </div>
                 </div>
               </div>
             ))}

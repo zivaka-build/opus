@@ -26,19 +26,19 @@ class Contact extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 mb-4 text-center">
-                            <i className="fas fa-envelope fa-3x mb-2"></i>
-                            <h3>Email</h3>
-                            <p>{this.state.email}</p>
+                            <i className="fas fa-envelope fa-2x mb-2"></i>
+                            <h3 className="contact-heading">Email</h3>
+                            <p className="contact-info">{this.state.email}</p>
                         </div>
                         <div className="col-md-4 mb-4 text-center">
-                            <i className="fas fa-address-book fa-3x mb-2"></i>
-                            <h3>Address</h3>
-                            <p>{this.state.address}</p>
+                            <i className="fas fa-address-book fa-2x mb-2"></i>
+                            <h3 className="contact-heading">Address</h3>
+                            <p className="contact-info">{this.state.address}</p>
                         </div>
                         <div className="col-md-4 mb-4 text-center">
-                            <i className="fas fa-phone fa-3x mb-2"></i>
-                            <h3>Phone</h3>
-                            <p>{this.state.phone}</p>
+                            <i className="fas fa-phone fa-2x mb-2"></i>
+                            <h3 className="contact-heading">Phone</h3>
+                            <p className="contact-info">{this.state.phone}</p>
                         </div>
                     </div>
                 </div>

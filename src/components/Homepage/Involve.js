@@ -38,7 +38,7 @@ class Involve extends React.Component {
                   <a
                     href={this.state.donate_link}
                     target="_blank"
-                    className="btn bg-g-crayola mb-3"
+                    className="buttons mb-3"
                     rel="noopener noreferrer"
                   >
                     Donate Now
@@ -52,7 +52,7 @@ class Involve extends React.Component {
                 <div className="card-body">
                   <a
                     href="/contact"
-                    className="btn bg-g-crayola mb-3"
+                    className="buttons mb-3"
                   >
                     Volunteer
                   </a>

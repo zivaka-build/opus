@@ -31,8 +31,9 @@ const Ashakiran = () => {
       {/*<Quote quoteId="1" />*/}
 
       {/* ARTICLES */}
+      <TeamCard teamId="3"/>
       <Article articleId="4" />
-      <TeamCard />
+      
 
       {/* TEAM */}
       {/* <Team /> */}

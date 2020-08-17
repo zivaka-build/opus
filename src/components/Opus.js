@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from "react";
 
+
 import Quote from "./Homepage/Quote";
 import Nav from "./Homepage/Nav";
 import Article from "./Homepage/Article";
@@ -19,8 +20,11 @@ const Opus = () => {
             {/* NavBar */}
             <Nav />
 
+            
             {/* SHOWCASE */}
             <Showcase />
+
+            <LogosPanel />
 
             {/* QUOTE SECTION */}
             {/*<Quote quoteId="2" />*/}
@@ -31,14 +35,14 @@ const Opus = () => {
             {/* ARTICLES */}
             <Article articleId="1" />
 
-            {/* STORY */}
-            <ShowPanel title="" id="4" />
+            {/* GALLERY */}
+            <Gallery />
 
             {/* DONATE NOW & VOLUNTEER SECTION */}
             <Involve />
 
-            {/* GALLERY */}
-            <Gallery />
+            {/* STORY */}
+            <ShowPanel title="" id="4" />
 
             {/* TESTIMONIALS SECTION */}
             {/*<Testimonial />*/}

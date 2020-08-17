@@ -34,10 +34,10 @@ class LogosPanel extends React.Component {
   render() {
     return (
       <section id="boxes" className="pt-5 pb-5 bg-alabaster">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             {this.state.logos.map((logoObj) => (
-              <div className="col-md-3" key={logoObj.name}>
+              <div className="col-6 col-sm-6 col-md-3" key={logoObj.name}>
                 <a
                   href={logoObj.href}
                   

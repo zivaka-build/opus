@@ -304,9 +304,18 @@ body {
 }
 
 #faq a {
+  text-decoration : none;
+}
+
+#faq a:hover {
+  color:#666666
+ 
+}
+
+/*#faq a {
     color: #fff;
     text-decoration: none;
-}
+}*/
 
 #faq .card-body,
 #faq .card-header {
@@ -316,7 +325,7 @@ body {
     text-align: center;
 }
 
-#faq a {
+/*#faq a {
     color: #000;
     padding: 15px;
     width: 95%;
@@ -326,7 +335,7 @@ body {
     font-size: 23pt;
     font-weight: bold;
     opacity: 0.7;
-}
+}*/
 
 #faq p {
     margin-top: 10px;
@@ -380,7 +389,7 @@ body {
   }
   
   .testimonial {
-    background-color: #aeadae;
+    background-color: rgb(156, 154, 154);
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -457,6 +466,8 @@ body {
     }
   }
 
+
+  
   .teamcard {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
@@ -471,10 +482,10 @@ body {
   
   /* Add some padding inside the card container */
   .teamcardcontainer {
-    margin-top: 30px;
-    margin-bottom: 15px;
+    
     margin-left: 0px;
     margin-right: 0px;
+    background-color: #f8f9fa;
   }
 
   
@@ -487,3 +498,36 @@ body {
   .team-social {
     padding-top: 0.5rem;
   }
+
+/* Involve Buttons */
+
+.buttons {
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:11px;
+	border:1px solid #706e6e;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:"Montserrat", sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	padding:14px 49px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.buttons:hover {
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+
+/* Contact Section */
+.contact-heading {
+  font-size: 1.2rem;
+}
+
+.contact-info {
+  font-size: 1.0rem;
+}

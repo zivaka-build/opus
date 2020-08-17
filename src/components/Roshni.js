@@ -32,7 +32,7 @@ const Roshni = () => {
 
       {/* ARTICLES */}
       <Article articleId="2" />
-      <TeamCard />
+      {/*<TeamCard />*/}
 
       {/* TEAM */}
       {/* <Team /> */}

@@ -32,7 +32,7 @@ const Metr = () => {
 
       {/* ARTICLES */}
       <Article articleId="3" />
-      <TeamCard />
+      {/*<TeamCard />*/}
 
       {/* STORY */}
       {/* <Story /> */}
