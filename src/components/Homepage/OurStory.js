@@ -30,6 +30,7 @@ class OurStory extends React.Component {
 
   render() {
     return (
+
       <section id="ourstory" class="pt-3 bg-light text-black">
         <div class="container">
           <hr />

@@ -12,13 +12,15 @@ import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
 import Navigation from "./Homepage/Navigation";
 import CurrentProjects from "./Homepage/CurrentProjects";
+import Nav2 from "./Homepage/Nav2"
 
 const Ashakiran = () => {
   return (
     <Fragment>
       {/* NavBar */}
       <Nav />
-      <LogosPanel />
+      {/* <LogosPanel /> */}
+      <Nav2 />
       {/*<Navigation />*/}
 
       {/* ABOUT SECTION */}

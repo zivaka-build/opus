@@ -12,7 +12,7 @@ class Nav extends React.Component {
           <a href="/" className="navbar-brand">
             <img
               src={require("./../../assets/img/opus.png")}
-              width={100}
+              
               alt="opus home icon"
             />
           </a>
@@ -44,12 +44,17 @@ class Nav extends React.Component {
                   className="dropdown-menu bg-alabaster"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a className="dropdown-item" href="/media">
-                    Media Center
-                  </a>
+
                   <a className="dropdown-item" href="/about">
                     Our Story
                   </a>
+                  <a className="dropdown-item" href="/media">
+                    Media Center
+                  </a>
+                  <a className="dropdown-item" href="/testimonials">
+                    Testimonials
+                  </a>
+                  
                   <a className="dropdown-item" href="/contact">
                     Contact Us
                   </a>
@@ -76,25 +81,25 @@ class Nav extends React.Component {
                   Pragati
                 </a>
     </li>*/}     <li className="nav-item">
-                <a className="nav-link" href="/initiative">
+                <a className="nav-link" id="nav-intiative" href="/initiative">
                   Initiatives
                 </a>
     </li>
                 
                <li className="nav-item">
-                <a className="nav-link" href="/ms">
+                <a className="nav-link" id="nav-ms" href="/ms">
                   Milestones
                 </a>
                 </li>
 
                 <li className="nav-item">
-                <a className="nav-link" href="/cp">
+                <a className="nav-link" id="nav-cp" href="/cp">
                   Current Projects
                 </a>
                </li>
               
 
-              <li className="nav-item active">
+              <li className="nav-item">
                 <a className="nav-link" href="https://rzp.io/l/lw35wig">
                   Donate Now
                 </a>
@@ -106,5 +111,7 @@ class Nav extends React.Component {
     );
   }
 }
+
+
 
 export default Nav;

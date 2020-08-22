@@ -1,22 +1,18 @@
 import React, { Fragment } from "react";
-
-import ShowPanel from "./Homepage/ShowPanel"
-import Nav from "./Homepage/Nav"
-
+import Nav from "./Homepage/Nav";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
+import Testimonial from "./Homepage/Testimonial"
 
-import Milestones from "./Homepage/Milestones"
-
-const ms = () => { 
+const TestimonialPage = () => { 
     return(
         <Fragment>
             <Nav />
-            <Milestones />
+            <Testimonial />
             <Contact />
             <Footer />
         </Fragment>
     );
 }
 
-export default ms;
+export default TestimonialPage;

@@ -36,13 +36,13 @@ const Opus = () => {
             <Article articleId="1" />
 
             {/* GALLERY */}
-            <Gallery />
+            {/* <Gallery />*/}
 
             {/* DONATE NOW & VOLUNTEER SECTION */}
             <Involve />
 
             {/* STORY */}
-            <ShowPanel title="" id="4" />
+            {/* <ShowPanel title="" id="4" /> */}
 
             {/* TESTIMONIALS SECTION */}
             {/*<Testimonial />*/}

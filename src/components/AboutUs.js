@@ -22,7 +22,7 @@ const AboutUs = () => {
       <LogosPanel />
 
       {/* Testimonial SECTION */}
-      <Testimonial />
+      {/* <Testimonial /> */}
 
       {/* DONATE NOW & VOLUNTEER SECTION */}
       <Involve />

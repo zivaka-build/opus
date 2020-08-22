@@ -30,99 +30,31 @@ class Testimonial extends React.Component {
 
   render() {
     return (
-      <div>
-        <div
-          id="carouselExampleIndicators"
-          className="carousel slide"
-          data-ride="carousel"
-        >
-          {/*Slides*/}
-          <div className="carousel-inner" role="listbox">
-            {/*First slide*/}
+        
+            <div className="testimonialcontainer row container-fluid text-center">
+               <div className="col-12 mt-5 text-center"><h3>Testimonials</h3></div>
             {this.state.testimonials.map((testimonial, index) => (
-              <div
-                className={
-                  this.state.active === index
-                    ? "carousel-item active"
-                    : "carousel-item"
-                }
-                key={testimonial.name}
-              >
+              <div className="testimonialcard col-sm-12 col-md-4 col-lg-4 container mt-3 mb-3">
                 <div className="row">
-                <div className="col-lg-6 testimonial">
-                  {/*Avatar*/}
-                  <div className="avatar mb-4">
-                    <p className="text-center">
-                      <img
-                        src={testimonial.imgSrc}
-                        className="rounded-circle img-fluid avatar-image"
-                        alt={testimonial.name}
-                      />
-                    </p>
+                  <div className="col-12 mt-2 mb-2 text-center">
+                    <img src={testimonial.imgSrc} alt="Avatar" style={{width: '40%'}} />
                   </div>
-                  {/*Content*/}
-                  <div className="container">
-                    <p className="textimonial-text text-center">
-                      <i className="fas fa-quote-left" /> {testimonial.message}
-                      <i className="fas fa-quote-right" />
-                    </p>
-                  </div>
-                  <h4 className="font-weight-bold text-center">
+                  <div className="container col-12" >
+                    <p className="textimonial-text text-center" >{testimonial.message}</p>
+                    <h4 className="font-weight-bold text-center">
                     {testimonial.name}
-                  </h4>
-                  <h6 className="font-weight-bold my-3 text-center">
+                    </h4>
+                    <h6 className="font-weight-bold my-3 text-center">
                     {testimonial.desc}
-                  </h6>
-                </div>
-                <div className="col-lg-6 testimonial">
-                  {/*Avatar*/}
-                  <div className="avatar mb-4">
-                    <p className="text-center">
-                      <img
-                        src={testimonial.imgSrc}
-                        className="rounded-circle img-fluid avatar-image"
-                        alt={testimonial.name}
-                      />
-                    </p>
+                    </h6>
                   </div>
-                  {/*Content*/}
-                  <div className="container">
-                    <p className="textimonial-text text-center">
-                      <i className="fas fa-quote-left" /> {testimonial.message}
-                      <i className="fas fa-quote-right" />
-                    </p>
-                  </div>
-                  <h4 className="font-weight-bold text-center">
-                    {testimonial.name}
-                  </h4>
-                  <h6 className="font-weight-bold my-3 text-center">
-                    {testimonial.desc}
-                  </h6>
-                </div>
                 </div>
               </div>
+                
             ))}
-          </div>
-          <a
-            className="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true" />
-            <span className="sr-only">Previous</span>
-          </a>
-          <a
-            className="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <span className="carousel-control-next-icon" aria-hidden="true" />
-            <span className="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
+            </div>
+          
+      
     );
   }
 }

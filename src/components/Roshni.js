@@ -12,13 +12,15 @@ import Contact from "./Homepage/Contact";
 import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
 import CurrentProjects from "./Homepage/CurrentProjects";
+import Nav2 from "./Homepage/Nav2"
 
 const Roshni = () => {
   return (
     <Fragment>
       {/* NavBar */}
       <Nav />
-      <LogosPanel  />
+      <Nav2 />
+      {/* <LogosPanel  /> */}
       {/*<Navigation />*/}
 
       {/* ABOUT SECTION */}

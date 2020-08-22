@@ -33,16 +33,16 @@ class TeamCard extends React.Component {
 
     render(){
     return(
-        <div className="teamcardcontainer row container-fluid text-center">
+        <div id="teams" className="teamcardcontainer row container-fluid text-center">
         <div className="col-12 mt-3 text-center"><h3>Our Team Members</h3></div>
         {this.state.teams.map((team) => (
-        <div className="teamcard col-sm-12 col-md-6 col-lg-7 container mt-3 mb-3">
+        <div className="teamcard col-sm-12 col-md-5 col-lg-5 container mt-3 mb-3">
         <div className="row">
         <div className="col-12 mt-2 mb-auto text-center">
         <img src={team.imgSrc} alt="Avatar" style={{width: '40%'}} /></div>
         <div className="container col-12">
-          <h3>{ team.name }</h3>
-           <p>{ team.role }</p>
+          <h4>{ team.name }</h4>
+           <h6>{ team.role }</h6>
             <p>{ team.short_bio }</p>
           </div>
           </div>

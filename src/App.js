@@ -24,6 +24,7 @@ import Metrms from "./components/Metrms"
 import Aashakiranms from "./components/Aashakiranms"
 import Pragatims from "./components/Pragatims"
 import Initiative from "./components/Initiative"
+import TestimonialPage from "./components/TestimonialPage"
 
 function App() {
     return (
@@ -33,6 +34,7 @@ function App() {
             <Metr path="/metr" />
             <Aashakiran path="/aashakiran" />
             <AboutUs path="/about" />
+            <TestimonialPage path="/testimonials" />
             <Contact path="/contact" />
             <Pragati path="/pragati" />
             <Initiative path="/initiative" />
@@ -41,6 +43,7 @@ function App() {
             <Metrcp path="/metrcp" />
             <Aashakirancp path="/aashakirancp" />
             <Pragaticp path="/pragaticp" />
+            
 
             <MS path="/ms" />
             <Roshnims path="/roshnims" />
