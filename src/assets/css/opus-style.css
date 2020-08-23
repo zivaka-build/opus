@@ -23,14 +23,7 @@ body {
 
 
 
-#showcase {
-    position: relative;
-    background: url("../img/newbanner.jpg");
-    min-height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
+
 
 .showcasebanner {
     padding-top: 3.5rem;
@@ -83,9 +76,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    #showcase {
-        min-height: 500px;
-    }
+   
 
     #showcase h1 {
         font-size: 4rem;
