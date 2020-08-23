@@ -1,108 +1,72 @@
 import React from "react";
 import axios from "axios";
 
-class CurrentProjects extends React.Component {
-  state = {
-    articles: [],
-    headline: "",
-    heading: "",
-  };
+class CurrentProjects extends React.Component { 
+    state = {
+        currentprojects: [],
+        active: 0,
+      };
 
-  componentDidMount() {
-    const root = "http://35.184.242.240:1337";
-    axios
-      .get("http://35.184.242.240:1337/milestones/" + this.props.id)
-      .then(({ data }) => {
-        const articles = data.storypanelwides.map((article) => {
-          return {
-            headline: article.heading,
-            description: article.description,
-            knowmore: article.knowmore,
-            donatelink: article.donatelink,
-            imgSrc: root + article.dpimg.formats.small.url,
-          };
-        });
-        const { headline, heading } = data;
-        this.setState({ articles, headline, heading });
-      });
-  }
+      componentDidMount() {
+        axios
+          .get("http://35.184.242.240:1337/current-project-list/")
+          .then(({ data }) => {
+            const root = "http://35.184.242.240:1337";
+            const currentprojects = data.current_project_items.map((currentproject) => {
+             
+              return {
+                publish_date : currentproject.publish_date,
+                headline : currentproject.headline,
+                initiative : currentproject.initiative,
+                details : currentproject.details,
+                knowmorelink : currentproject.knowmorelink,
+                imgSrc : root + currentproject.dpimage.formats.small.url,
+                
+              };
+            });
+            const { name } = data;
+            this.setState({ currentprojects, name });
+          })
+          .catch(console.error);
+      }  
 
-  render() {
-    return (
-      <section id="currentprojects" className="bg-alabaster richard">
-        <div className="container pb-2 pt-5">
-          <h3 class="text-primary text-center">{this.state.heading}</h3>
-          {this.state.articles.map((article, index) => {
-            if (index % 2 === 0) {
-              return (
-                <div className="row pt-5">
-                  <div className="col-lg-6  col-md-6 col-12 mb-5">
-                    <h1 className="">{article.headline}</h1>
-                    <p>{article.description}</p>
-                    {article.knowmore ? (
-                      <a
-                        href={article.knowmore}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn bg-primary text-white"
-                      >
-                        Know more
-                      </a>
-                    ) : null}{" "}
-                    {article.donatelink ? (
-                      <a
-                        href={article.donatelink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn bg-primary text-white "
-                      >
-                        Donate
-                      </a>
-                    ) : null}
+     
+
+      render() {
+          return(
+            <section id="currentprojects" className="bg-alabaster richard">
+                <div className="container pb-3 pt-5">
+                <h3 class="text-primary text-center">{this.state.name}</h3>
+                {this.state.currentprojects.map((currentproject) => (
+                    <div className="row pt-5">
+                    <div className="col-lg-6 col-md-6 col-12">
+                      <img src={currentproject.imgSrc} className="img-fluid " alt="" />
+                    </div>
+                    <div className="col-lg-6  col-md-6 col-12 mb-5">
+                        <h5>{currentproject.publish_date}</h5>
+                        <h5>{currentproject.initiative}</h5>
+                      <h4 className="">{currentproject.headline}</h4>
+                      <p>{currentproject.details}</p>
+                      {currentproject.knowmorelink ? (
+                        <a
+                          href={currentproject.knowmorelink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn bg-primary text-white"
+                        >
+                          Know more
+                        </a>
+                      ) : null}{" "}
+
+                      
+                      
+                    </div>
                   </div>
-                  <div className="col-lg-6 col-md-6 col-12">
-                    <img src={article.imgSrc} className="img-fluid " alt="" />
-                  </div>
+                ))}
                 </div>
-              );
-            } else {
-              return (
-                <div className="row pt-5">
-                  <div className="col-lg-6 col-md-6 col-12">
-                    <img src={article.imgSrc} className="img-fluid " alt="" />
-                  </div>
-                  <div className="col-lg-6  col-md-6 col-12 mb-5">
-                    <h1 className="">{article.headline}</h1>
-                    <p>{article.description}</p>
-                    {article.knowmore ? (
-                      <a
-                        href={article.knowmore}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn bg-primary text-white"
-                      >
-                        Know more
-                      </a>
-                    ) : null}{" "}
-                    {article.donatelink ? (
-                      <a
-                        href={article.donatelink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn bg-primary text-white "
-                      >
-                        Donate
-                      </a>
-                    ) : null}
-                  </div>
-                </div>
-              );
-            }
-          })}
-        </div>
-      </section>
-    );
-  }
+            </section>
+          );
+      }
 }
 
 export default CurrentProjects;
