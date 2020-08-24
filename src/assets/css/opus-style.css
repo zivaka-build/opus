@@ -740,4 +740,21 @@ body {
 }
 
 
+/* LogosPanel */
+.card-container {
+  padding-left: 70px;
+}
 
+#logo-card {
+  max-width:70%;
+}
+
+@media (max-width: 663px) {
+  .card-container {
+    padding-left: 0px;
+  }
+
+  #logo-card {
+    max-width: none;
+  }
+}

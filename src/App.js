@@ -25,6 +25,7 @@ import Aashakiranms from "./components/Aashakiranms"
 import Pragatims from "./components/Pragatims"
 import Initiative from "./components/Initiative"
 import TestimonialPage from "./components/TestimonialPage"
+import VisionMission from "./components/VisionMission"
 
 function App() {
     return (
@@ -43,7 +44,7 @@ function App() {
             <Metrcp path="/metrcp" />
             <Aashakirancp path="/aashakirancp" />
             <Pragaticp path="/pragaticp" />
-            
+            <VisionMission path="/vision" />
 
             <MS path="/ms" />
             <Roshnims path="/roshnims" />

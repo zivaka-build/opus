@@ -35,7 +35,7 @@ class LogosPanel extends React.Component {
     return (
       <section id="boxes" className="pt-5 pb-5 bg-alabaster">
         <div className="container-fluid">
-          <div className="row">
+          <div className="card-container row">
             {this.state.logos.map((logoObj) => (
               <div className="col-6 col-sm-6 col-md-3" key={logoObj.name}>
                 <a
@@ -43,7 +43,7 @@ class LogosPanel extends React.Component {
                   
                   rel="noopener noreferrer"
                 >
-                  <div className="card text-center text-white mb-resp">
+                  <div className="card text-center text-white mb-resp" id="logo-card">
                     <div className="card-body">
                       <img src={logoObj.url} alt={logoObj.name} width="100%" />
                     </div>

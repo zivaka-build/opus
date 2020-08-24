@@ -48,6 +48,9 @@ class Nav extends React.Component {
                   <a className="dropdown-item" href="/about">
                     Our Story
                   </a>
+                  <a className="dropdown-item" href="/vision">
+                    Vision Mission
+                  </a>
                   <a className="dropdown-item" href="/media">
                     Media Center
                   </a>

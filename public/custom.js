@@ -87,6 +87,10 @@ $(function () {
       {
         $(this).addClass('text-link');
       }
+      else if( "vision" == n )
+      {
+        $(this).addClass('text-link');
+      }
       
     });
 })
