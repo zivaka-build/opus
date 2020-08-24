@@ -739,6 +739,12 @@ body {
   border-radius: 28px;
 }
 
+@media (max-width: 663px) {
+  .add-button {
+    display: none;
+  }
+}
+
 
 /* LogosPanel */
 .card-container {
