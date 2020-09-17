@@ -26,6 +26,7 @@ import Pragatims from "./components/Pragatims"
 import Initiative from "./components/Initiative"
 import TestimonialPage from "./components/TestimonialPage"
 import VisionMission from "./components/VisionMission"
+import OurBenefactors from "./components/OurBenefactors"
 
 function App() {
     return (
@@ -51,6 +52,7 @@ function App() {
             <Metrms path="/metrms" />
             <Aashakiranms path="/aashakiranms" />
             <Pragatims path="/pragatims" />
+            <OurBenefactors path="/ourbenefactors" />
 
             <MediaCenter path="/media" />
             <SingleBlogPage exact path="/blog/:blogId" />

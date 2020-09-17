@@ -91,6 +91,10 @@ $(function () {
       {
         $(this).addClass('text-link');
       }
+      else if( "ourbenefactors" == n )
+      {
+        $(this).addClass('text-link');
+      }
       
     });
 })
