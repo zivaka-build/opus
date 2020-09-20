@@ -35,25 +35,25 @@ render() {
         <center>
         <h3>Our Benefactors</h3>
         </center>
-    
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Cause</th>
-                        <th>Kind of Donation</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.state.benefactors.map((benefactor) => (
-                    <tr>
-		                 <td>{benefactor.Name}</td>
-		                <td>{benefactor.Cause}</td>
-		                <td>{benefactor.DetailsOfDonationInKind}</td>
-	                </tr>
+        <br />
+        <div class="container">
+        <ul class="responsive-table">
+        <li class="table-header">
+      <div class="column column-1"><b>Name</b></div>
+      <div class="column column-2"><b>Cause</b></div>
+      <div class="column column-3"><b>Kind of Donation</b></div>
+    </li>
+    {this.state.benefactors.map((benefactor) => (
+                    <li class="table-row">
+                    <div class="column column-1" data-label="Name ">{benefactor.Name}</div>
+                    <div class="column column-2" data-label="Cause ">{benefactor.Cause}</div>
+                    <div class="column column-3" data-label="Kind Of Donation ">{benefactor.DetailsOfDonationInKind}</div>
+                    
+                  </li>
                     ))}
-                </tbody>
-            </table>
+        </ul>
+        </div>
+            
     
 
      
