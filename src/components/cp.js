@@ -5,6 +5,7 @@ import CurrentProjects from "./Homepage/CurrentProjects"
 import Nav from "./Homepage/Nav"
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
+import Involve from "./Homepage/Involve"
 
 
 const cp = () => {
@@ -12,6 +13,7 @@ const cp = () => {
         <Fragment>
             <Nav />
             <CurrentProjects />
+            <Involve />
             <Contact />
             <Footer />
             

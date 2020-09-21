@@ -13,6 +13,7 @@ import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
 import CurrentProjects from "./Homepage/CurrentProjects";
 import Nav2 from "./Homepage/Nav2"
+import Involve from "./Homepage/Involve"
 
 const Metr = () => {
   return (
@@ -43,7 +44,7 @@ const Metr = () => {
       {/* <Testimonial /> */}
 
       {/*<CurrentProjects id="10" title="Current Initiative" />*/}
-
+      <Involve />
       {/* CONTACT US SECTION */}
       <Contact />
 

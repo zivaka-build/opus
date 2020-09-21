@@ -13,6 +13,7 @@ import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
 import CurrentProjects from "./Homepage/CurrentProjects";
 import Nav2 from "./Homepage/Nav2"
+import Involve from "./Homepage/Involve"
 
 const Roshni = () => {
   return (
@@ -44,7 +45,7 @@ const Roshni = () => {
 
       {/* STORY */}
       {/* <Story /> */}
-
+      <Involve />
       {/*<CurrentProjects id="9" title="Current Initiative" />*/}
       {/* CONTACT US SECTION */}
       <Contact />

@@ -13,6 +13,7 @@ import ShowPanel from "./Homepage/ShowPanel";
 import Navigation from "./Homepage/Navigation";
 import CurrentProjects from "./Homepage/CurrentProjects";
 import Nav2 from "./Homepage/Nav2"
+import Involve from "./Homepage/Involve"
 
 const Pragati = () => {
   return (
@@ -43,7 +44,7 @@ const Pragati = () => {
       {/* <Testimonial /> */}
 
       {/*<CurrentProjects id="7" title="Current Initiative" />*/}
-
+      <Involve />
       {/* CONTACT US SECTION */}
       <Contact />
 

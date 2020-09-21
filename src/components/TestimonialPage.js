@@ -3,6 +3,7 @@ import Nav from "./Homepage/Nav";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import Testimonial from "./Homepage/Testimonial"
+import Involve from "./Homepage/Involve"
 
 const TestimonialPage = () => { 
     return(
@@ -10,6 +11,7 @@ const TestimonialPage = () => {
             <Nav />
             <Testimonial />
             <Contact />
+            <Involve />
             <Footer />
         </Fragment>
     );

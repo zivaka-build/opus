@@ -12,6 +12,7 @@ import OurStory from "./Homepage/OurStory";
 import ShowPanel from "./Homepage/ShowPanel";
 import Navigation from "./Homepage/Navigation";
 import CurrentProjects from "./Homepage/CurrentProjects";
+import Involve from "./Homepage/Involve"
 import Nav2 from "./Homepage/Nav2"
 
 const Ashakiran = () => {
@@ -49,6 +50,7 @@ const Ashakiran = () => {
       {/*<CurrentProjects id="8" title="Current Initiative" />*/}
 
       {/* CONTACT US SECTION */}
+      <Involve />
       <Contact />
 
       {/* FOOTER */}
