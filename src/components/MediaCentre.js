@@ -11,7 +11,7 @@ import Milestone from "./Homepage/Milestone";
 import Article from "./Homepage/Article";
 import ShowPanel from "./Homepage/ShowPanel";
 import Involve from "./Homepage/Involve"
-
+import RecentPost from "./Homepage/RecentPost"
 const MediaCentre = () => {
   return (
     <Fragment>
@@ -27,11 +27,12 @@ const MediaCentre = () => {
       {/* ARTICLES */}
       <Article articleId="5" />
 
-      {/* MILESTONE */}
-      <ShowPanel id="11" title="Milestones" />
+      {/* MILESTONE 
+      <ShowPanel id="11" title="Milestones" />*/}
 
       {/* BLOGlIST SECTION */}
       <BlogList />
+      <RecentPost />
 
       {/* TEAM */}
       {/* <Team /> */}
