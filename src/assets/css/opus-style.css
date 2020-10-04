@@ -764,3 +764,27 @@ body {
     max-width: none;
   }
 }
+
+/* BlogListing Page */
+
+.bloglist .bloglist-heading {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.bloglist .bloglist-intro,
+.bloglist-author,
+.bloglist-date {
+  font-size: 1rem;
+}
+
+.bloglist .bloglist-card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 1rem;
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+.bloglist .bloglist-card span a {
+  color: black;
+}

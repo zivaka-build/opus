@@ -24,6 +24,7 @@ const Opus = () => {
             {/* SHOWCASE */}
             <Showcase />
 
+
             <LogosPanel />
 
             {/* QUOTE SECTION */}

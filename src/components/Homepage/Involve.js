@@ -41,7 +41,7 @@ class Involve extends React.Component {
                     className="buttons mb-3"
                     rel="noopener noreferrer"
                   >
-                    Donate Now
+                    Help Us
                   </a>
                   <p>{this.state.donate}</p>
                 </div>

@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
+import BootstrapTable from 'react-bootstrap-table-next';
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
-import "./../../assets/css/table.css"
 
 
 class Benefactors extends React.Component {
@@ -13,7 +14,7 @@ class Benefactors extends React.Component {
       componentDidMount() {
         const root = "http://35.184.242.240:1337";
         axios
-        .get("http://35.184.242.240:1337/benefactors")
+        .get("http://35.184.242.240:1337/benefactors?_sort=cause:ASC")
         .then(({ data }) => {
         const benefactors = data.map((benefactor) => {
             const { Name, Cause, DetailsOfDonationInKind } = benefactor;
@@ -34,26 +35,16 @@ render() {
         <div className="benefactors pt-5 pb-5">
         <center>
         <h3>Our Benefactors</h3>
-        </center>
+        
         <br />
-        <div class="container">
-        <ul class="responsive-table">
-        <li class="table-header">
-      <div class="column column-1"><b>Name</b></div>
-      <div class="column column-2"><b>Cause</b></div>
-      <div class="column column-3"><b>Kind of Donation</b></div>
-    </li>
-    {this.state.benefactors.map((benefactor) => (
-                    <li class="table-row">
-                    <div class="column column-1" data-label="Name ">{benefactor.Name}</div>
-                    <div class="column column-2" data-label="Cause ">{benefactor.Cause}</div>
-                    <div class="column column-3" data-label="Kind Of Donation ">{benefactor.DetailsOfDonationInKind}</div>
-                    
-                  </li>
-                    ))}
-        </ul>
+        
+        <div className="col-lg-8 col-md-8 col-12">
+        <BootstrapTable bootstrap4 keyField='Cause' data={ this.state.benefactors } columns={ [{ dataField: 'Name', text: 'Name', sort: true},
+        { dataField: 'Cause', text: 'Cause',sort: true},
+        { dataField: 'DetailsOfDonationInKind', text: 'Kind Of Donation'}
+        ] } />
         </div>
-            
+        </center>
     
 
      
