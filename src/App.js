@@ -27,6 +27,7 @@ import Initiative from "./components/Initiative"
 import TestimonialPage from "./components/TestimonialPage"
 import VisionMission from "./components/VisionMission"
 import OurBenefactors from "./components/OurBenefactors"
+import ThinkTank from "./components/ThinkTank"
 
 function App() {
     return (
@@ -46,7 +47,7 @@ function App() {
             <Aashakirancp path="/aashakirancp" />
             <Pragaticp path="/pragaticp" />
             <VisionMission path="/vision" />
-
+            <ThinkTank path="/thinktank" />
             <MS path="/ms" />
             <Roshnims path="/roshnims" />
             <Metrms path="/metrms" />

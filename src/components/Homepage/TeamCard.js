@@ -11,11 +11,11 @@ class TeamCard extends React.Component {
     const root = "http://35.184.242.240:1337";
 
     axios
-      .get("http://35.184.242.240:1337/teams/" + this.props.teamId)
+      .get("http://35.184.242.240:1337/team-members")
       .then(({ data }) => { 
         console.log(data);
 
-        const teams = data.team_members.map((team) => {
+        const teams = data.map((team) => {
           const { id, name, role, short_bio} = team;
           const imgSrc = root + team.picture.url;
 
@@ -33,8 +33,8 @@ class TeamCard extends React.Component {
 
     render(){
     return(
-        <div id="teams" className="teamcardcontainer row container-fluid text-center">
-        <div className="col-12 mt-3 text-center"><h3>Our Team Members</h3></div>
+        <div id="teams" className="teamcardcontainer row container-fluid text-center pt-5">
+        <div className="col-12 mt-3 text-center"><h3>Think Tank</h3></div>
         {this.state.teams.map((team) => (
          
         <div className="teamcard col-sm-12 col-md-5 col-lg-5 container mt-3 mb-3">
@@ -44,11 +44,13 @@ class TeamCard extends React.Component {
         <div className="container col-12">
           <h4>{ team.name }</h4>
            <h6>{ team.role }</h6>
-            <p>{ team.short_bio }</p>
+            <p className="text-justify">{ team.short_bio }</p>
           </div>
           </div>
         </div>
         ))}
+
+
       
       </div>
 

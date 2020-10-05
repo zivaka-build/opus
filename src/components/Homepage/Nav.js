@@ -58,6 +58,10 @@ class Nav extends React.Component {
                     Testimonials
                   </a>
 
+                  <a className="dropdown-item" href="/thinktank">
+                    Think Tank
+                  </a>
+
                   <a className="dropdown-item" href="/ourbenefactors">
                     Our Benefactors
                   </a>
@@ -87,11 +91,42 @@ class Nav extends React.Component {
                 <a className="nav-link" href="/pragati">
                   Pragati
                 </a>
-    </li>*/}     <li className="nav-item">
+    </li>*/}     {/*<li className="nav-item">
                 <a className="nav-link" id="nav-intiative" href="/initiative">
                   Initiatives
                 </a>
-    </li>
+    </li> */}
+
+<li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="/initiative"
+                  id="navbarDropdownMenuLink2"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Initiatives
+                </a>
+                <div
+                  className="dropdown-menu bg-alabaster"
+                  aria-labelledby="navbarDropdownMenuLink2"
+                >
+
+                  <a className="dropdown-item" href="/roshni">
+                    Roshni
+                  </a>
+                  <a className="dropdown-item" href="/metr">
+                    Metr
+                  </a>
+                  <a className="dropdown-item" href="/aashakiran">
+                    AashaKiran
+                  </a>
+                  <a className="dropdown-item" href="/pragati">
+                    Pragati
+                  </a>
+                </div>
+              </li>
                 
                <li className="nav-item">
                 <a className="nav-link" id="nav-ms" href="/ms">

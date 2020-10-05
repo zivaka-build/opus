@@ -2,14 +2,14 @@ import React, { Fragment } from "react";
 import Nav from "./Homepage/Nav";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
-import Testimonial from "./Homepage/Testimonial"
+import TeamCard from "./Homepage/TeamCard"
 import Involve from "./Homepage/Involve"
 
-const TestimonialPage = () => { 
+const ThinkTank = () => { 
     return(
         <Fragment>
             <Nav />
-            <Testimonial />
+            <TeamCard />
             <Involve />
             <Contact />
             
@@ -18,4 +18,4 @@ const TestimonialPage = () => {
     );
 }
 
-export default TestimonialPage;
+export default ThinkTank;

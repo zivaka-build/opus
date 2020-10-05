@@ -79,6 +79,10 @@ $(function () {
       {
         $(this).addClass('text-link');
       }
+      else if( "about" == n )
+      {
+        $(this).addClass('text-link');
+      }
       else if( "contact" == n )
       {
         $(this).addClass('text-link');
@@ -92,6 +96,32 @@ $(function () {
         $(this).addClass('text-link');
       }
       else if( "ourbenefactors" == n )
+      {
+        $(this).addClass('text-link');
+      }
+      else if( "thinktank" == n )
+      {
+        $(this).addClass('text-link');
+      }
+      
+    });
+
+    $("#navbarDropdownMenuLink2").each(function(){
+      a=window.location.href.split("/");
+      n=a[a.length - 1];
+      if( "roshni" == n )
+      {
+        $(this).addClass('text-link');
+      }
+      else if( "metr" == n )
+      {
+        $(this).addClass('text-link');
+      }
+      else if( "aashakiran" == n )
+      {
+        $(this).addClass('text-link');
+      }
+      else if( "pragati" == n )
       {
         $(this).addClass('text-link');
       }

@@ -36,7 +36,7 @@ class LogosPanel extends React.Component {
   
       <section id="boxes" className="pt-5 pb-5 bg-alabaster">
         
-        <center><h3>Initiatives</h3></center>
+        <center><h3>Our Initiatives</h3></center>
         
         <br />
         <div className="container-fluid">

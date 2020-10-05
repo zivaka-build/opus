@@ -3,6 +3,7 @@ import { Router } from "@reach/router";
 // import "./assets/css/style.css";
 import "./assets/css/bootstrap.css";
 import "./assets/css/opus-style.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Opus from "./components/Opus";
 import Roshni from "./components/Roshni";

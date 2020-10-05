@@ -32,7 +32,7 @@ const Pragati = () => {
 
       {/* QUOTE SECTION */}
       {/*<Quote quoteId="5" />*/}
-      <TeamCard teamId="4"/>
+      
       {/* ARTICLES */}
       <Article articleId="6" />
       

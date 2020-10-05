@@ -34,7 +34,7 @@ const Ashakiran = () => {
       {/*<Quote quoteId="1" />*/}
 
       {/* ARTICLES */}
-      <TeamCard teamId="3"/>
+      
       <Article articleId="4" />
       
 
@@ -50,6 +50,7 @@ const Ashakiran = () => {
       {/*<CurrentProjects id="8" title="Current Initiative" />*/}
 
       {/* CONTACT US SECTION */}
+      
       <Involve />
       <Contact />
 
