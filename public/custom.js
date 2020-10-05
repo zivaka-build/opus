@@ -95,10 +95,6 @@ $(function () {
       {
         $(this).addClass('text-link');
       }
-      else if( "ourbenefactors" == n )
-      {
-        $(this).addClass('text-link');
-      }
       else if( "thinktank" == n )
       {
         $(this).addClass('text-link');
@@ -126,6 +122,20 @@ $(function () {
         $(this).addClass('text-link');
       }
       
+    });
+
+    $("#navbarDropdownMenuLink3").each(function(){
+      a=window.location.href.split("/");
+      n=a[a.length - 1];
+      if( "ourbenefactors" == n )
+      {
+        $(this).addClass('text-link');
+      }
+      else if( "contact" == n )
+      {
+        $(this).addClass('text-link');
+      }
+     
     });
 })
 

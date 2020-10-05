@@ -5,8 +5,7 @@ import Nav from "./Homepage/Nav";
 import Contact from "./Homepage/Contact";
 import Footer from "./Homepage/Footer";
 import OurStory from "./Homepage/OurStory";
-import Involve from "./Homepage/Involve";
-import Testimonial from "./Homepage/Testimonial";
+
 import ShowPanel from "./Homepage/ShowPanel";
 
 const AboutUs = () => {
@@ -25,7 +24,7 @@ const AboutUs = () => {
       {/* <Testimonial /> */}
 
       {/* DONATE NOW & VOLUNTEER SECTION */}
-      <Involve />
+    
 
       {/* MILESTONE */}
       <ShowPanel id="5" />

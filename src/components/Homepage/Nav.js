@@ -61,10 +61,6 @@ class Nav extends React.Component {
                   <a className="dropdown-item" href="/thinktank">
                     Think Tank
                   </a>
-
-                  <a className="dropdown-item" href="/ourbenefactors">
-                    Our Benefactors
-                  </a>
                   
                   <a className="dropdown-item" href="/contact">
                     Contact Us
@@ -141,10 +137,32 @@ class Nav extends React.Component {
                </li>
               
 
-              <li className="nav-item">
-                <a className="nav-link" href="https://rzp.io/l/lw35wig">
-                  Donate Now
+               <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="/"
+                  id="navbarDropdownMenuLink3"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Support Us
                 </a>
+                <div
+                  className="dropdown-menu bg-alabaster"
+                  aria-labelledby="navbarDropdownMenuLink3"
+                >
+
+                  <a className="dropdown-item" href="https://rzp.io/l/lw35wig"  target="_blank" rel="noopener noreferrer">
+                    Donate Now
+                  </a>
+                  <a className="dropdown-item" href="/contact">
+                    Volunteer
+                  </a>
+                  <a className="dropdown-item" href="/ourbenefactors">
+                    Our Benefactors
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

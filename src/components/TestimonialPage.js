@@ -10,7 +10,7 @@ const TestimonialPage = () => {
         <Fragment>
             <Nav />
             <Testimonial />
-            <Involve />
+           
             <Contact />
             
             <Footer />

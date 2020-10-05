@@ -29,11 +29,11 @@ class Benefactors extends React.Component {
         });
 
         const cashbenefactors = responseArr[1].data.map((cashbenefactor) =>{
-            const { Name, Cause, amount }  = cashbenefactor;
+            const { Name, Cause, Type }  = cashbenefactor;
             return {
                 Name,
                 Cause,
-                amount
+                Type
             };
         });
 
@@ -114,7 +114,7 @@ render() {
         
         <BootstrapTable bootstrap4 keyField='id' data={ this.state.cashbenefactors } columns={ [{ dataField: 'Name', text: 'Name', sort: true},
         { dataField: 'Cause', text: 'Cause',sort: true},
-        { dataField: 'amount', text: 'Amount'}
+        { dataField: 'Type', text: 'Donation Type'}
         ] } />
         </div>
 

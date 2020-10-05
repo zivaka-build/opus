@@ -9,8 +9,7 @@ import BlogList from "./Homepage/BlogList";
 import Showcase from "./Homepage/Showcase";
 import Milestone from "./Homepage/Milestone";
 import Article from "./Homepage/Article";
-import ShowPanel from "./Homepage/ShowPanel";
-import Involve from "./Homepage/Involve"
+
 import RecentPost from "./Homepage/RecentPost"
 const MediaCentre = () => {
   return (
@@ -42,7 +41,7 @@ const MediaCentre = () => {
 
       {/* GALLERY */}
       {/* <Gallery /> */}
-      <Involve />
+   
       {/* CONTACT US SECTION */}
       <Contact />
 

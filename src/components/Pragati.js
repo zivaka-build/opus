@@ -23,6 +23,12 @@ const Pragati = () => {
       <Nav2 />
       {/* <LogosPanel /> */}
       {/*<Navigation />*/}
+      <section id="showcase" className="pt-3 pb-3 text-center bg-light">
+      
+         
+      <img id="banner" className="col-12 col-sm-12 col-md-12 col-lg-12" src={require("./../assets/img/Pragati-Banner-1.jpg")} />
+   
+      </section>
 
       {/* ABOUT SECTION */}
       <OurStory aboutId="5" />
@@ -44,7 +50,7 @@ const Pragati = () => {
       {/* <Testimonial /> */}
 
       {/*<CurrentProjects id="7" title="Current Initiative" />*/}
-      <Involve />
+      
       {/* CONTACT US SECTION */}
       <Contact />
 

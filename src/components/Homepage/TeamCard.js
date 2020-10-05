@@ -33,7 +33,7 @@ class TeamCard extends React.Component {
 
     render(){
     return(
-        <div id="teams" className="teamcardcontainer row container-fluid text-center pt-5">
+        <div id="teams" className="teamcardcontainer row container-fluid text-center pt-2">
         <div className="col-12 mt-3 text-center"><h3>Think Tank</h3></div>
         {this.state.teams.map((team) => (
          

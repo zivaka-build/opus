@@ -11,7 +11,7 @@ const VisionMission = () => {
         <Fragment>
             <Nav />
             <OurStory aboutId="6"/>
-            <Involve />
+            
             <Contact />
             <Footer />
         </Fragment>
