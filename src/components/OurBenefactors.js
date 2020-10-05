@@ -12,7 +12,7 @@ const OurBenefactors = () => {
         <Fragment>
             <Nav />
             <Benefactors />
-            <Involve />
+            
             <Contact />
             <Footer />
         </Fragment>

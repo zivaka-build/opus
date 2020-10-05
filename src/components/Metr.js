@@ -20,7 +20,7 @@ const Metr = () => {
     <Fragment>
       {/* NavBar */}
       <Nav />
-      <Nav2 />
+      
       {/* <LogosPanel /> */}
       {/*<Navigation />*/}
       <section id="showcase" className="pt-3 pb-3 text-center bg-light">

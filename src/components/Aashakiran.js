@@ -21,7 +21,7 @@ const Ashakiran = () => {
       {/* NavBar */}
       <Nav />
       {/* <LogosPanel /> */}
-      <Nav2 />
+      
       {/*<Navigation />*/}
       <section id="showcase" className="pt-3 pb-3 text-center bg-light">
       

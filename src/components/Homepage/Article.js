@@ -70,7 +70,7 @@ class Article extends React.Component {
               {this.state.articles.map((article) =>
                 article.type === "video" ? (
                   <div
-                    className="col-md-3"
+                    className="col-md-2"
                     key={article.imgSRc + article.tilename}
                   >
                     <div className="card card-inverse">
@@ -101,7 +101,7 @@ class Article extends React.Component {
                     </div>
                   </div>
                 ) : (
-                  <div className="col-md-3" key={article.imgSrc}>
+                  <div className="col-md-2" key={article.imgSrc}>
                     <div
                       className="card card-inverse"
                       style={{ cursor: "pointer" }}

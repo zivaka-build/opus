@@ -104,7 +104,7 @@ render() {
         <BootstrapTable bootstrap4 keyField='id' data={ this.state.benefactors } columns={ [{ dataField: 'Name', text: 'Name', sort: true},
         { dataField: 'Cause', text: 'Cause',sort: true},
         { dataField: 'DetailsOfDonationInKind', text: 'Kind Of Donation'}
-        ] } />
+        ] } wrapperClasses="table-responsive"/>
         </div>
 
         <div className="cashdonation col-lg-8 col-md-8 col-12" id="cashdonation" style={{display: 'none'}}>

@@ -788,3 +788,7 @@ body {
 .bloglist .bloglist-card span a {
   color: black;
 }
+
+.react-bootstrap-table table {
+  table-layout: auto;
+}

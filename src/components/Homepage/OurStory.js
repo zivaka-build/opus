@@ -45,7 +45,7 @@ class OurStory extends React.Component {
               <p>{this.state.details}</p>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 panel-right">
-              <h3 class="text-center">{this.state.title}</h3>
+              
               {/* <p>{this.state.textblock1}</p> */}
 
               {this.state.textblock1 == null ? null : (

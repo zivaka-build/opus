@@ -83,10 +83,7 @@ $(function () {
       {
         $(this).addClass('text-link');
       }
-      else if( "contact" == n )
-      {
-        $(this).addClass('text-link');
-      }
+     
       else if( "testimonials" == n )
       {
         $(this).addClass('text-link');

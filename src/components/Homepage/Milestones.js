@@ -35,8 +35,8 @@ class Milestones extends React.Component {
       render() {
           return(
             <section id="story" className="bg-alabaster">
-                <div className="container pb-3 pt-5">
-                <h3 class="text-primary text-center">{this.state.Name}</h3>
+                <div className="container pb-3 pt-1">
+                
                 {this.state.milestones.map((milestone) => (
                     <div className="row pt-5">
                     <div className="col-lg-6 col-md-6 col-12">

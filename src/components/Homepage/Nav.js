@@ -62,9 +62,7 @@ class Nav extends React.Component {
                     Think Tank
                   </a>
                   
-                  <a className="dropdown-item" href="/contact">
-                    Contact Us
-                  </a>
+                  
                 </div>
               </li>
               {/*<li className="nav-item">
@@ -140,7 +138,7 @@ class Nav extends React.Component {
                <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="/"
+                  href="/contact"
                   id="navbarDropdownMenuLink3"
                   data-toggle="dropdown"
                   aria-haspopup="true"

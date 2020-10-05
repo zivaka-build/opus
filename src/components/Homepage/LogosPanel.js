@@ -33,10 +33,11 @@ class LogosPanel extends React.Component {
 
   render() {
     return (
-  
-      <section id="boxes" className="pt-5 pb-5 bg-alabaster">
+      <div className="bg-alabaster">
+      <h3 className="text-center pt-3">Our Initiatives</h3>
+      <section id="boxes" className="pt-3 pb-3 bg-alabaster">
         
-        <center><h3>Our Initiatives</h3></center>
+        
         
         <br />
         <div className="container-fluid">
@@ -59,6 +60,7 @@ class LogosPanel extends React.Component {
           </div>
         </div>
       </section>
+      </div>
     );
   }
 }
