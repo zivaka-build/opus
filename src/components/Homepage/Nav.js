@@ -59,7 +59,7 @@ class Nav extends React.Component {
                   </a>
 
                   <a className="dropdown-item" href="/thinktank">
-                    Think Tank
+                    Thinktank
                   </a>
                   
                   

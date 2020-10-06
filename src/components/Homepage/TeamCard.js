@@ -34,7 +34,7 @@ class TeamCard extends React.Component {
     render(){
     return(
         <div id="teams" className="teamcardcontainer row container-fluid text-center pt-2">
-        <div className="col-12 mt-3 text-center"><h3>Think Tank</h3></div>
+        <div className="col-12 mt-3 text-center"><h3>Thinktank</h3></div>
         {this.state.teams.map((team) => (
          
         <div className="teamcard col-sm-12 col-md-5 col-lg-5 container mt-3 mb-3">
