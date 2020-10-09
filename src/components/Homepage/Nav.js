@@ -114,7 +114,7 @@ class Nav extends React.Component {
                     Metr
                   </a>
                   <a className="dropdown-item" href="/aashakiran">
-                    AashaKiran
+                    Aasha Kiran
                   </a>
                   <a className="dropdown-item" href="/pragati">
                     Pragati
